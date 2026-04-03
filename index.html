@@ -1,44 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Personal Blog</title>
+  <title>Angela Marietti | Ostetrica Pavimento Pelvico</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1> Dottoressa e ostetrica Angela Marietti </h1>
-      <p> Ciao, sono felice di accogliervi nel mio blog personale, dove pubblicherò molti consigli utili ber il benessere del vostro pavimento pelvico! </p>
-    </header>
+  <header class="site-header">
+    <div class="brand">
+      <h1>Angela Marietti</h1>
+      <p>Ostetrica libera professionista</p>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#servizi">Servizi</a>
+      <a href="#chi-sono">Chi sono</a>
+      <a href="#testimonianze">Testimonianze</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+  </header>
 
-    <section>
-      <h2>🧑‍💻 About Me</h2>
-      <p>
-        Nata in via Besseto 33, ho sempre avuto una grande passione per le vulve di tutti i tipi: bianche, nere, tutte quante!
-      </p>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Specialista in pavimento pelvico, mestruazioni dolorose e dolore durante i rapporti</h2>
+      <p>Percorsi personalizzati di prevenzione, cura e supporto per la salute sessuale e ginecologica delle donne.</p>
+      <a class="btn" href="#contatti">Prenota una consulenza</a>
+    </div>
+  </section>
+
+  <main class="main-content">
+    <section id="servizi" class="cards-section">
+      <h2>Servizi</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Valutazione del pavimento pelvico</h3>
+          <p>Analisi funzionale, tonificazione e riequilibrio posturale con tecniche manuali e biofeedback.</p>
+        </article>
+        <article class="card">
+          <h3>Gestione dolori mestruali</h3>
+          <p>Piani terapeutici personalizzati con esercizi, tecniche di rilassamento e consulenza nutrizionale.</p>
+        </article>
+        <article class="card">
+          <h3>Dispareunia e dolore ai rapporti</h3>
+          <p>Approccio multidisciplinare con terapia fisica, psicologica e supporto relazionale.</p>
+        </article>
+        <article class="card">
+          <h3>Percorsi pre e post parto</h3>
+          <p>Preparazione al parto, recupero del perineo e sostegno al benessere postpartum.</p>
+        </article>
+      </div>
     </section>
 
-    <section>
-      <h2>⭐ Things I Like</h2>
+    <section id="chi-sono" class="section-light">
+      <h2>Chi sono</h2>
+      <p>Sono Angela, ostetrica laureata con esperienza ventennale. Mi occupo di salute femminile con un focus specifico su pavimento pelvico e condizioni dolorose croniche.</p>
       <ul>
-        <li>🌌 I cieli stellati</li>
-        <li>📚 La letteratura forense del XVI secolo</li>
-        <li>🎵 La Dark Polo Gang</li>
-        <li>💻 Programmare in Python & JavaScript</li>
-        <li>🍝 Cucinare</li>
+        <li>Libera professionista in studio privato e online</li>
+        <li>Esperta in riabilitazione pelvica e riabilitazione sessuale</li>
+        <li>Formatrice su tematiche di salute genitale e consapevolezza corporea</li>
       </ul>
+      <p>Il mio obiettivo è offrire un ambiente protetto, empatico e scientificamente aggiornato.</p>
     </section>
 
-    <section>
-      <h2>🎨 Daily Mood</h2>
-      <img src="https://img1.picmix.com/output/stamp/normal/3/3/1/6/2506133_15c6f.gif" alt="Creative Idea" class="clipart">
+    <section id="testimonianze" class="section-dark">
+      <h2>Testimonianze</h2>
+      <div class="testimonial-grid">
+        <blockquote>
+          <p>"Grazie ad Angela ho imparato a conoscere il mio corpo e ho ridotto i dolori mestruali in poche settimane."</p>
+          <cite>— Marta, 34 anni</cite>
+        </blockquote>
+        <blockquote>
+          <p>"Il percorso per la dispareunia ha trasformato la mia vita di coppia, con esercizi graduali e molta attenzione emotiva."</p>
+          <cite>— Giulia, 29 anni</cite>
+        </blockquote>
+      </div>
     </section>
 
-    <footer>
-      <p>Thanks for visiting! 🌟</p>
-    </footer>
-  </div>
+    <section id="faq" class="section-light">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Quanto dura una valutazione del pavimento pelvico?</summary>
+        <p>Circa 60 minuti. Include anamnesi, esame obiettivo, test muscolari e piano di lavoro.</p>
+      </details>
+      <details>
+        <summary>Devo avere una prescrizione medica?</summary>
+        <p>No, la visita per il pavimento pelvico può avvenire anche in autonomia, ma collaboro volentieri con ginecologi e specialisti.</p>
+      </details>
+      <details>
+        <summary>Si può fare teleconsulenza?</summary>
+        <p>Sì, offro anche incontri online con esercizi guidati, materiali digitali e follow-up.</p>
+      </details>
+    </section>
+
+    <section id="contatti" class="section-contact">
+      <h2>Contatta lo studio</h2>
+      <p>Scrivimi per una prima valutazione gratuita o per pianificare un percorso completo.</p>
+      <form id="contactForm">
+        <input type="text" name="nome" placeholder="Nome e Cognome" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="tel" name="telefono" placeholder="Telefono" />
+        <select name="servizio" required>
+          <option value="">Seleziona servizio</option>
+          <option value="pavimento_pelvico">Pavimento Pelvico</option>
+          <option value="dolori_mestruali">Dolori mestruali</option>
+          <option value="dolore_rapporti">Dolore nei rapporti</option>
+          <option value="post_partum">Post-partum</option>
+        </select>
+        <textarea name="messaggio" rows="4" placeholder="Messaggio" required></textarea>
+        <button type="submit" class="btn">Invia richiesta</button>
+      </form>
+      <p id="formFeedback" class="feedback"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Dott.ssa Angela Marietti • Ostetrica libera professionista</p>
+    <p>Email: info@angelamarietti.it • Tel: +39 345 0000000</p>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      document.getElementById('formFeedback').textContent = 'Richiesta inviata! Ti risponderò presto via email.';
+      this.reset();
+    });
+
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
 </body>
 </html>
