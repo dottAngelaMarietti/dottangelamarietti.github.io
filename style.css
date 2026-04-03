@@ -213,3 +213,36 @@ summary {
   }
 }
 
+/* New image styles */
+.logo {
+  height: 50px;
+  width: auto;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
+.profile-img {
+  display: block;
+  max-width: 300px;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.qr-section {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #f9fbff;
+  border-radius: 12px;
+}
+
+.qr-code {
+  max-width: 200px;
+  height: auto;
+  margin: 1rem 0;
+  border: 2px solid #dfe9f8;
+  border-radius: 8px;
+}
+
