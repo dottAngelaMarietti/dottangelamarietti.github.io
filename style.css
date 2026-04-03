@@ -5,7 +5,11 @@
 body {
   margin: 0;
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
-  background: linear-gradient(130deg, #e6f2ff 0%, #fbf9ff 100%);
+  background: linear-gradient(rgba(230, 242, 255, 0.8), rgba(251, 249, 255, 0.8)), url('sfondo.jpeg');
+  background-size: 100% auto;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: center 0px;
   color: #2a3340;
   line-height: 1.6;
 }
@@ -35,6 +39,17 @@ body {
   color: #5b6f95;
 }
 
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
 nav a {
   color: #314c82;
   text-decoration: none;
@@ -50,7 +65,7 @@ nav a:hover {
 .hero {
   padding: 4rem 2rem;
   text-align: center;
-  background-image: linear-gradient(145deg, rgba(22, 62, 117, 0.8), rgba(82, 138, 193, 0.83)), url('https://images.unsplash.com/photo-1490459153209-54bf9fb42670?auto=format&fit=crop&w=1500&q=80');
+  background-image: linear-gradient(145deg, rgba(22, 62, 117, 0.8), rgba(82, 138, 193, 0.83));
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -215,7 +230,7 @@ summary {
 
 /* New image styles */
 .logo {
-  height: 50px;
+  height: 90px;
   width: auto;
   margin-right: 1rem;
   vertical-align: middle;
