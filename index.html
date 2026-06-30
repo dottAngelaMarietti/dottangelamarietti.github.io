@@ -3,7 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Angela Marietti – Ostetrica, Riabilitazione del Pavimento Pelvico</title>
+<title>Angela Marietti – Ostetrica, Riabilitazione del Pavimento Pelvico | Udine, Trieste</title>
+<meta name="description" content="Angela Marietti, ostetrica specializzata in riabilitazione del pavimento pelvico. Trattamento di dolore pelvico, vulvodinia, vaginismo, incontinenza, post-partum e menopausa. Visite a Udine, Trieste, Pianborno e online.">
+<meta name="keywords" content="ostetrica, riabilitazione pavimento pelvico, dolore pelvico, vulvodinia, vaginismo, incontinenza urinaria, dolore rapporti sessuali, dispareunia, endometriosi, adenomiosi, cistite ricorrente, post-partum, menopausa, ostetrica Udine, ostetrica Trieste, ostetrica Pianborno, fisioterapia pelvica, dismenorrea, preparazione al parto">
+<meta name="author" content="Angela Marietti">
+<meta property="og:title" content="Angela Marietti – Ostetrica, Riabilitazione del Pavimento Pelvico">
+<meta property="og:description" content="Percorsi personalizzati di riabilitazione del pavimento pelvico per dolore pelvico, vulvodinia, vaginismo, post-partum e menopausa. Studio a Udine, Trieste, Pianborno e online.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -138,7 +145,6 @@
     align-items: center; justify-content: center;
     background: linear-gradient(160deg, var(--rose-light) 0%, var(--rose-mid) 100%);
   }
-  /* Real photo support */
   .hero-photo-img {
     position: absolute; inset: 0;
     width: 100%; height: 100%;
@@ -190,7 +196,7 @@
     line-height: 1.8; max-width: 540px; margin-bottom: 3rem;
   }
 
-  /* SERVIZI — 4 cols desktop, 2 tablet, 1 mobile, always fills rows */
+  /* SERVIZI */
   #servizi { background: var(--white); }
   .services-grid {
     --cols: 4;
@@ -233,9 +239,7 @@
     gap: 2rem;
     margin-top: 1rem;
   }
-  .step-item {
-    flex: 1 1 220px; /* grow, shrink, min-width — fills any row width evenly */
-  }
+  .step-item { flex: 1 1 220px; }
   .step-num {
     font-family: var(--serif); font-size: 4rem; font-weight: 300;
     color: var(--rose-mid); line-height: 1; margin-bottom: 0.75rem; user-select: none;
@@ -246,7 +250,7 @@
   }
   .step-item p { font-size: 0.9rem; color: var(--text-light); line-height: 1.75; }
 
-  /* FAQ — CSS columns so content flows naturally without gaps */
+  /* FAQ */
   #faq { background: var(--cream); }
   .faq-wrap {
     columns: 2;
@@ -282,18 +286,19 @@
   .reviews-grid {
     display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;
   }
-  .wa-card { background: #f0f2f5; border-radius: 12px; padding: 1rem; font-family: var(--sans); position: relative; }
+  .wa-card { background: #f0f2f5; border-radius: 12px; padding: 1rem; font-family: var(--sans); }
   .wa-header {
-    display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem;
-    padding-bottom: 0.6rem; border-bottom: 1px solid rgba(0,0,0,0.06);
+    display: flex; align-items: center; gap: 0.7rem; margin-bottom: 0.75rem;
+    padding-bottom: 0.6rem; border-bottom: 1px solid rgba(0,0,0,0.07);
   }
   .wa-avatar {
-    width: 32px; height: 32px; border-radius: 50%; background: var(--rose-mid);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 0.75rem; font-weight: 500; color: var(--warm-dark); flex-shrink: 0;
+    width: 38px; height: 38px; border-radius: 50%;
+    flex-shrink: 0; overflow: hidden; background: var(--rose-mid);
   }
-  .wa-name { font-size: 0.8rem; font-weight: 500; color: #111; }
-  .wa-time { font-size: 0.68rem; color: #888; margin-left: auto; }
+  .wa-avatar img { width: 100%; height: 100%; display: block; }
+  .wa-meta { display: flex; flex-direction: column; gap: 2px; }
+  .wa-topic { font-size: 0.82rem; font-weight: 500; color: #2d2420; text-transform: none; line-height: 1.2; }
+  .wa-via { font-size: 0.69rem; color: #888; display: flex; align-items: center; gap: 3px; }
   .wa-bubble {
     background: white; border-radius: 0 10px 10px 10px;
     padding: 0.65rem 0.85rem; font-size: 0.88rem; color: #2d2d2d;
@@ -304,7 +309,6 @@
     border-top: 6px solid white; border-left: 6px solid transparent;
   }
   .wa-tick { text-align: right; font-size: 0.65rem; color: #4fc3f7; margin-top: 0.3rem; letter-spacing: -0.5px; }
-  .wa-note { font-size: 0.7rem; color: #999; text-align: center; margin-top: 0.5rem; font-style: italic; }
 
   /* CONTATTI */
   #contatti { background: var(--warm-dark); color: var(--white); }
@@ -314,22 +318,24 @@
   #contatti .section-sub { color: rgba(255,255,255,0.6); max-width: 480px; }
 
   .location-boxes {
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 4rem;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-bottom: 4rem;
   }
-  /* Smooth animated location boxes */
+  @media (max-width: 1100px) { .location-boxes { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 500px)  { .location-boxes { grid-template-columns: 1fr; } }
   .location-box {
     background: rgba(255,255,255,0.06);
     border: 1px solid rgba(201,160,150,0.25);
     padding: 2rem 1.75rem;
-    cursor: default;
+    cursor: pointer;
     transition: background 0.4s ease, border-color 0.4s ease, transform 0.3s ease, box-shadow 0.4s ease;
-    position: relative; overflow: hidden;
+    position: relative; overflow: visible;
   }
   .location-box:hover {
     background: rgba(201,160,150,0.14);
     border-color: rgba(201,160,150,0.55);
     transform: translateY(-3px);
     box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+    z-index: 30;
   }
   .location-box .loc-icon { font-size: 1.6rem; margin-bottom: 1rem; display: block; }
   .location-box h3 {
@@ -340,16 +346,23 @@
     font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase;
     color: var(--rose); margin-bottom: 1.25rem;
   }
-  /* Animated details reveal */
   .loc-details {
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background: var(--warm-dark);
+    border: 1px solid rgba(201,160,150,0.55);
+    border-top: none;
     overflow: hidden;
     max-height: 0;
     opacity: 0;
-    transition: max-height 0.45s cubic-bezier(0.4,0,0.2,1), opacity 0.35s ease 0.05s;
+    padding: 0 1.75rem;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.35);
+    transition: max-height 0.45s cubic-bezier(0.4,0,0.2,1), opacity 0.35s ease 0.05s, padding 0.3s;
   }
   .location-box:hover .loc-details {
-    max-height: 200px;
+    max-height: 260px;
     opacity: 1;
+    padding: 1.25rem 1.75rem 1.5rem;
   }
   .loc-details p {
     font-size: 0.88rem; color: rgba(255,255,255,0.75); line-height: 1.75; margin-bottom: 0.4rem;
@@ -374,25 +387,26 @@
     padding: 0.5rem 1rem; font-size: 0.8rem; color: var(--rose-mid);
     letter-spacing: 0.06em; margin-top: 0.5rem;
   }
-  .contact-form { display: flex; flex-direction: column; gap: 1rem; }
-  .contact-form input, .contact-form textarea, .contact-form select {
+  .direct-contacts { display: flex; flex-direction: column; gap: 1rem; }
+  .direct-contact-item {
+    display: flex; align-items: center; gap: 1rem;
     background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15);
-    color: white; font-family: var(--sans); font-size: 0.92rem;
-    padding: 0.85rem 1.1rem; outline: none; transition: border-color 0.2s;
-    resize: none; appearance: none;
+    padding: 1.1rem 1.3rem; text-decoration: none; color: white;
+    transition: border-color 0.25s, background 0.25s, transform 0.2s;
   }
-  .contact-form input::placeholder, .contact-form textarea::placeholder { color: rgba(255,255,255,0.35); }
-  .contact-form select option { background: var(--warm-dark); color: white; }
-  .contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus { border-color: var(--rose); }
-  .contact-form textarea { min-height: 90px; }
-  .btn-submit {
-    background: var(--rose); color: white; border: none; cursor: pointer;
-    font-family: var(--sans); font-size: 0.82rem; font-weight: 500;
-    letter-spacing: 0.1em; text-transform: uppercase;
-    padding: 0.9rem 2rem; align-self: flex-start;
-    transition: background 0.25s, transform 0.2s;
+  .direct-contact-item:hover {
+    border-color: var(--rose); background: rgba(201,160,150,0.12); transform: translateY(-2px);
   }
-  .btn-submit:hover { background: var(--rose-mid); color: var(--warm-dark); transform: translateY(-1px); }
+  .dc-icon {
+    flex-shrink: 0; width: 42px; height: 42px; border-radius: 50%;
+    background: rgba(201,160,150,0.18); border: 1px solid rgba(201,160,150,0.35);
+    display: flex; align-items: center; justify-content: center; font-size: 1.15rem;
+  }
+  .dc-label {
+    font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--rose-mid); margin-bottom: 0.2rem;
+  }
+  .dc-value { font-family: var(--serif); font-size: 1.05rem; color: white; font-weight: 400; }
 
   footer {
     background: var(--warm-dark); border-top: 1px solid rgba(255,255,255,0.08);
@@ -402,11 +416,15 @@
   footer p { font-size: 0.78rem; color: rgba(255,255,255,0.35); }
   footer a { color: var(--rose); text-decoration: none; }
 
-  /* CHI SONO PAGE */
   .chi-sono-hero {
-    padding-top: calc(var(--nav-height) + 4rem); padding-bottom: 4rem;
-    padding-left: 4rem; padding-right: 4rem;
-    display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;
+    padding-top: calc(var(--nav-height) + 4rem);
+    padding-bottom: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5rem;
+    align-items: center;
     min-height: 80vh;
   }
   .chi-left .overline {
@@ -426,7 +444,6 @@
     flex-direction: column; gap: 1rem; border: 1px solid var(--rose-mid);
     position: relative; overflow: hidden;
   }
-  /* Real photo in chi sono */
   .chi-photo-img {
     position: absolute; inset: 0;
     width: 100%; height: 100%;
@@ -473,7 +490,7 @@
     margin-bottom: 3rem; transition: gap 0.2s;
   }
   .back-btn:hover { gap: 0.75rem; }
-  .service-detail-inner { display: grid; grid-template-columns: 2fr 1fr; gap: 4rem; max-width: 1000px; }
+  .service-detail-inner { display: grid; grid-template-columns: 2.2fr 1fr; gap: 4rem; width: 100%; }
   .service-detail h1 {
     font-family: var(--serif); font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 300; color: var(--warm-dark); line-height: 1.2; margin-bottom: 1rem;
@@ -582,19 +599,21 @@
     <div class="hero-left fade-in">
       <div class="hero-tag">Ostetrica · Riabilitazione del Pavimento Pelvico</div>
       <h1 class="hero-title">Il tuo corpo<br>merita di<br><em>stare bene.</em></h1>
-      <p class="hero-sub">Un percorso personalizzato per la salute del tuo pavimento pelvico, affrontato con competenza, delicatezza e rispetto.</p>
-      <button class="hero-cta" onclick="goHomeSection('#contatti')">Prenota una visita <span class="arrow">→</span></button>
+      <p class="hero-sub">
+        Il mio lavoro nasce dal desiderio di dare voce a chi soffre in silenzio: il tuo dolore o fastidio intimo non merita meno attenzione. Metto al centro la tua storia, perché ogni percorso di guarigione parte dall'ascolto. 
+      </p>
+      <button class="hero-cta" onclick="goHomeSection('#contatti')">
+        Prenota una visita <span class="arrow">→</span>
+      </button>
     </div>
+
     <div class="hero-right">
-      <img class="hero-photo-img" src="angela.jpg" alt="Angela Marietti">
-      <!--<div class="hero-photo-placeholder">
-        <div class="avatar-circle">AM</div>
-        <p>Foto di Angela Marietti</p>
-      </div>
-      <div class="logo-badge">
-        <div class="logo-name">Angela Marietti</div>
-        <div class="logo-title">Ostetrica Specializzata</div>
-      </div> -->
+      <img
+        class="hero-photo-img"
+        src="angela.jpg"
+        alt="Angela Marietti"
+        style="object-fit: cover; object-position: center center;"
+      >
     </div>
   </div>
 
@@ -608,24 +627,24 @@
 
   <!-- COSA ASPETTARTI -->
   <section id="aspettarti">
-    <div class="section-tag">La visita</div>
-    <h2 class="section-title">Cosa aspettarti<br><em>da una visita</em></h2>
-    <p class="section-sub">Ogni appuntamento è un momento riservato a te. Ecco come si svolge il percorso.</p>
+    <div class="section-tag">Cosa aspettarti</div>
+    <h2 class="section-title">Il nostro primo incontro:<br><em>uno spazio tutto per te</em></h2>
+    <p class="section-sub">La prima visita è il momento in cui costruiamo le basi del tuo percorso. Non è solo un controllo tecnico, ma un incontro basato sull'ascolto e sull'andare alla radice dei sintomi.</p>
     <div class="steps-row">
       <div class="step-item fade-in">
         <div class="step-num">01</div>
-        <h3>Colloquio iniziale</h3>
-        <p>Ascolto attivo e senza giudizio. Analizziamo la tua storia e i tuoi sintomi in uno spazio sicuro e confidenziale.</p>
+        <h3>Il Colloquio</h3>
+        <p>Ci prenderemo il tempo necessario per ripercorrere la tua storia, i tuoi sintomi, le tue abitudini e i tuoi obiettivi. Ogni dettaglio è importante e capirai che ci sono molte più cose di quello che immagini che ruotano intorno al pavimento pelvico.</p>
       </div>
       <div class="step-item fade-in delay-1">
         <div class="step-num">02</div>
-        <h3>Valutazione funzionale</h3>
-        <p>Valutazione completa del pavimento pelvico: tono muscolare, coordinazione, sensibilità e pattern respiratori.</p>
+        <h3>La Valutazione</h3>
+        <p>Analizzeremo insieme la funzionalità del tuo pavimento pelvico con estrema delicatezza, rispettando sempre i tuoi tempi e il tuo livello di comfort: ti spiegherò passo per passo cosa faremo. </p>
       </div>
       <div class="step-item fade-in delay-2">
         <div class="step-num">03</div>
-        <h3>Piano personalizzato</h3>
-        <p>Costruiamo insieme un programma su misura per te: esercizi, abitudini, tecniche manuali e follow-up.</p>
+        <h3>Il Piano di Cura</h3>
+        <p>Ti spiegherò cosa sta succedendo al tuo corpo e decideremo insieme la strategia migliore per farti tornare a stare bene.</p>
       </div>
     </div>
   </section>
@@ -650,10 +669,10 @@
   <section id="contatti">
     <div class="section-tag">Dove e come</div>
     <h2 class="section-title" style="color:white">Inizia il tuo <em style="color:var(--rose-mid)">percorso</em></h2>
-    <p class="section-sub">Scegli il modo che preferisci per incontrarmi. Passa sopra ogni opzione per i dettagli.</p>
+    <p class="section-sub">Scegli il modo che preferisci per incontrarmi. Passa sopra ogni opzione per i dettagli, o clicca per scrivermi su WhatsApp.</p>
 
     <div class="location-boxes">
-      <div class="location-box">
+      <div class="location-box" onclick="contactWhatsApp('Udine')">
         <span class="loc-icon">🏥</span>
         <div class="loc-tag">Studio fisico</div>
         <h3>Udine</h3>
@@ -663,21 +682,33 @@
           <p><strong>Parcheggio:</strong> disponibile nelle vicinanze</p>
           <p><strong>Contatto diretto:</strong> +39 333 000 0000</p>
         </div>
-        <div class="loc-hover-hint">↑ Passa sopra per i dettagli</div>
+        <div class="loc-hover-hint">↑ Scopri di più</div>
       </div>
-      <div class="location-box">
+      <div class="location-box" onclick="contactWhatsApp('Pianborno')">
         <span class="loc-icon">🌿</span>
         <div class="loc-tag">Studio fisico</div>
-        <h3>Piamborno</h3>
+        <h3>Pianborno</h3>
         <div class="loc-details">
-          <p><strong>Indirizzo:</strong> Via [da inserire], Piamborno</p>
+          <p><strong>Indirizzo:</strong> Via [da inserire], Pianborno</p>
           <p><strong>Orari:</strong> su appuntamento</p>
           <p><strong>Ambiente:</strong> immerso nella natura, tranquillo e riservato</p>
           <p><strong>Contatto diretto:</strong> +39 333 000 0000</p>
         </div>
-        <div class="loc-hover-hint">↑ Passa sopra per i dettagli</div>
+        <div class="loc-hover-hint">↑ Scopri di più</div>
       </div>
-      <div class="location-box">
+      <div class="location-box" onclick="contactWhatsApp('Trieste')">
+        <span class="loc-icon">⚓</span>
+        <div class="loc-tag">Studio fisico</div>
+        <h3>Trieste</h3>
+        <div class="loc-details">
+          <p><strong>Indirizzo:</strong> Via [da inserire], Trieste</p>
+          <p><strong>Orari:</strong> su appuntamento</p>
+          <p><strong>Parcheggio:</strong> disponibile nelle vicinanze</p>
+          <p><strong>Contatto diretto:</strong> +39 333 000 0000</p>
+        </div>
+        <div class="loc-hover-hint">↑ Scopri di più</div>
+      </div>
+      <div class="location-box" onclick="contactWhatsApp('Online')">
         <span class="loc-icon">💻</span>
         <div class="loc-tag">Da casa tua</div>
         <h3>Visita online</h3>
@@ -687,35 +718,67 @@
           <p><strong>Prenotazione:</strong> via form qui sotto o WhatsApp</p>
           <p><strong>Fuso orario:</strong> Italia (CET/CEST)</p>
         </div>
-        <div class="loc-hover-hint">↑ Passa sopra per i dettagli</div>
+        <div class="loc-hover-hint">↑ Scopri di più</div>
       </div>
     </div>
 
     <div class="call-booking">
       <div class="call-intro">
-        <h3>Non sei sicura?<br>Prenota una chiamata gratuita.</h3>
-        <p>Se hai dubbi, se non sai da dove iniziare, o se vuoi semplicemente conoscermi prima di prenotare una visita, offro una <strong style="color:white">chiamata conoscitiva gratuita di 15 minuti</strong>.</p>
-        <p>Nessun impegno. Solo uno spazio per capire se posso esserti d'aiuto.</p>
+        <h3>Non sei sicura?<br>Scrivimi direttamente.</h3>
+        <p>Capisco che iniziare un percorso di riabilitazione pelvica possa sollevare dubbi o timori. Per questo, ho scelto di offrirti una <strong style="color:white">chiamata conoscitiva gratuita di 15 minuti</strong>.</p>
+        <p>Sarà un momento tutto nostro in cui potrai espormi brevemente la tua situazione e io potrò spiegarti se e come il mio approccio può aiutarti. Senza impegno, solo per iniziare a conoscerci e capire se sono la professionista giusta per te.</p>
         <span class="call-highlight">✦ 100% gratuita · nessun obbligo</span>
       </div>
-      <form class="contact-form" onsubmit="submitForm(event)">
-        <input type="text" placeholder="Il tuo nome" required>
-        <input type="email" placeholder="La tua email" required>
-        <input type="tel" placeholder="Telefono / WhatsApp">
-        <select>
-          <option value="" disabled selected>Preferenza di orario</option>
-          <option>Mattina (9:00 – 12:00)</option>
-          <option>Pomeriggio (14:00 – 17:00)</option>
-          <option>Sera (17:00 – 19:00)</option>
-        </select>
-        <textarea placeholder="Raccontami brevemente di cosa hai bisogno (facoltativo)…"></textarea>
-        <button type="submit" class="btn-submit">Richiedi la chiamata gratuita →</button>
-      </form>
+      <div class="direct-contacts">
+        <a class="direct-contact-item" href="mailto:angela.marietti@example.com">
+          <span class="dc-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#e8cdc7" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="5" width="18" height="14" rx="2.2"/>
+              <path d="M3.5 6.5l8.5 6.2 8.5-6.2"/>
+            </svg>
+          </span>
+          <div>
+            <div class="dc-label">Email</div>
+            <div class="dc-value">angela.marietti@example.com</div>
+          </div>
+        </a>
+        <a class="direct-contact-item" href="https://wa.me/393330000000" target="_blank" rel="noopener">
+          <span class="dc-icon">
+            <svg viewBox="0 0 24 24" width="21" height="21" fill="#25D366">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.83 14.07c-.25.7-1.45 1.36-2 1.45-.5.08-1.13.11-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.93-4.36-.14-.19-1.17-1.56-1.17-2.98 0-1.42.74-2.11 1-2.4.26-.29.57-.36.76-.36h.55c.18 0 .41-.01.6.46.24.59.81 2.01.88 2.16.07.15.12.32.02.52-.09.2-.16.32-.31.5-.15.18-.32.4-.45.54-.15.16-.3.33-.13.62.17.29.77 1.27 1.66 2.06 1.14 1.02 2.1 1.34 2.4 1.49.3.15.48.13.65-.05.18-.18.74-.86.94-1.16.2-.3.41-.25.68-.15.27.1 1.71.81 2 .96.29.15.49.22.56.34.08.13.08.74-.17 1.44z"/>
+            </svg>
+          </span>
+          <div>
+            <div class="dc-label">Telefono · WhatsApp</div>
+            <div class="dc-value">+39 333 000 0000</div>
+          </div>
+        </a>
+        <a class="direct-contact-item" href="https://instagram.com/angelamarietti" target="_blank" rel="noopener">
+          <span class="dc-icon">
+            <svg viewBox="0 0 24 24" width="21" height="21" fill="none">
+              <defs>
+                <linearGradient id="igGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#f9ce34"/>
+                  <stop offset="45%" stop-color="#ee2a7b"/>
+                  <stop offset="100%" stop-color="#6228d7"/>
+                </linearGradient>
+              </defs>
+              <rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.2" stroke="url(#igGrad)" stroke-width="1.8"/>
+              <circle cx="12" cy="12" r="4.3" stroke="url(#igGrad)" stroke-width="1.8"/>
+              <circle cx="17.3" cy="6.7" r="1.15" fill="url(#igGrad)"/>
+            </svg>
+          </span>
+          <div>
+            <div class="dc-label">Instagram</div>
+            <div class="dc-value">@angelamarietti</div>
+          </div>
+        </a>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Angela Marietti – Ostetrica. P.IVA 00000000000</p>
+    <p>Angela Marietti · P.IVA 00000000000 · Iscritta all'Ordine delle Ostetriche di Trieste (#1234)</p>
     <p>Privacy Policy · <a href="#">Cookie Policy</a></p>
   </footer>
 
@@ -727,9 +790,10 @@
     <div class="chi-left fade-in">
       <div class="overline">Chi Sono</div>
       <h1>Ostetrica con il cuore.<br><em>Specialista</em> nella pratica.</h1>
-      <p>Sono Angela Marietti, ostetrica con oltre 12 anni di esperienza nel campo della salute femminile. Dopo la specializzazione in riabilitazione del pavimento pelvico, ho dedicato la mia carriera ad accompagnare le donne verso il benessere fisico e psicologico.</p>
-      <p>Il mio approccio è olistico: ogni donna è unica, e ogni percorso di cura deve tener conto della storia individuale, dello stile di vita e delle emozioni della paziente. Credo profondamente nel potere dell'ascolto e nella medicina rispettosa.</p>
-      <p>Collaboro con ginecologi, fisioterapisti e psicologi per garantire una presa in carico a 360°.</p>
+      <p>Angela Marietti, ostetrica specializzata in riabilitazione del pavimento pelvico femminile, con particolare attenzione a tutte le problematiche di dolore. Ricevo in studio a Udine (UD) e a Piamborno (BS), ma anche online ovunque tu ti trova. Nella mia pratica, ho imparato che il pavimento pelvico non è solo un insieme di muscoli, ma il centro vitale della salute femminile. Spesso custodisce storie, emozioni e cambiamenti profondi che meritano di essere accolti con delicatezza.</p>
+      <p>Il mio obiettivo non è solo trattare un sintomo, ma prendermi cura della persona nella sua interezza. Mi prendo il tempo necessario per conoscere la tua storia, i tuoi ritmi e le tue necessità, senza fretta e senza giudizio. Non esistono protocolli standard. Ogni corpo è unico e il percorso di riabilitazione viene cucito su misura per te, rispettando i tuoi tempi e la tua sensibilità.</p>
+      <p>Se tu lo vorrai, ti accompagnerò a riscoprire questa parte fondamentale del tuo corpo, fornendoti gli strumenti per sentirti di nuovo a tuo agio, sicura e in armonia con te stessa. In questo spazio, la tua salute non è un numero o una diagnosi, ma un percorso condiviso fatto di empatia, competenza e rispetto profondo.</p>
+      <p>Credo che la cura della donna richieda un'attenzione sempre viva. Per questo continuo, giorno per giorno, a formarmi nelle dinamiche del pavimento pelvico, nella gestione del dolore pelvico, nel trattamento e prevenzione delle infezioni vaginali e urinarie ricorrenti, nelle sfide che accompagnano la sessualità e nella transizione verso la menopausa.</p>
       <div class="credentials">
         <span class="cred-pill">Laurea in Ostetricia</span>
         <span class="cred-pill">Master in Riabilitazione Pelvica</span>
@@ -738,9 +802,7 @@
       </div>
     </div>
     <div class="chi-photo fade-in delay-2">
-      <!-- PHOTO SLOT: replace placeholder with <img class="chi-photo-img" src="foto-angela-chi-sono.jpg" alt="Angela Marietti"> -->
-      <div class="avatar-lg">AM</div>
-      <p>Foto professionale di Angela</p>
+      <img class="chi-photo-img" src="angela2.jpeg" alt="Angela Marietti" style="object-fit: cover; object-position: center center;">
     </div>
   </div>
   <div class="chi-bio-section">
@@ -762,7 +824,10 @@
     </div>
   </div>
   <footer style="background:var(--warm-dark); border-top:1px solid rgba(255,255,255,0.08); padding:1.5rem 4rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem">
-    <p style="font-size:0.78rem; color:rgba(255,255,255,0.35)">© 2025 Angela Marietti</p>
+    <div style="display:flex; flex-direction:column; gap:0.3rem;">
+      <p style="font-size:0.78rem; color:rgba(255,255,255,0.35)">Angela Marietti · P.IVA 00000000000 · Iscritta all'Ordine delle Ostetriche di Trieste (#1234)</p>
+      <p style="font-size:0.78rem; color:rgba(255,255,255,0.35)">Privacy Policy · <a href="#" style="color:var(--rose)">Cookie Policy</a></p>
+    </div>
     <button onclick="showPage('home')" style="background:none; border:none; color:var(--rose); font-size:0.82rem; cursor:pointer; letter-spacing:0.06em">← Torna alla home</button>
   </footer>
 </div>
@@ -776,7 +841,10 @@
     <div class="services-grid" id="serviziPageGrid"></div>
   </div>
   <footer style="background:var(--warm-dark); border-top:1px solid rgba(255,255,255,0.08); padding:1.5rem 4rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem">
-    <p style="font-size:0.78rem; color:rgba(255,255,255,0.35)">© 2025 Angela Marietti</p>
+    <div style="display:flex; flex-direction:column; gap:0.3rem;">
+      <p style="font-size:0.78rem; color:rgba(255,255,255,0.35)">Angela Marietti · P.IVA 00000000000 · Iscritta all'Ordine delle Ostetriche di Trieste (#1234)</p>
+      <p style="font-size:0.78rem; color:rgba(255,255,255,0.35)">Privacy Policy · <a href="#" style="color:var(--rose)">Cookie Policy</a></p>
+    </div>
     <button onclick="showPage('home')" style="background:none; border:none; color:var(--rose); font-size:0.82rem; cursor:pointer; letter-spacing:0.06em">← Torna alla home</button>
   </footer>
 </div>
@@ -802,7 +870,10 @@
     </div>
   </div>
   <footer style="background:var(--warm-dark); border-top:1px solid rgba(255,255,255,0.08); padding:1.5rem 4rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem">
-    <p style="font-size:0.78rem; color:rgba(255,255,255,0.35)">© 2025 Angela Marietti</p>
+    <div style="display:flex; flex-direction:column; gap:0.3rem;">
+      <p style="font-size:0.78rem; color:rgba(255,255,255,0.35)">Angela Marietti · P.IVA 00000000000 · Iscritta all'Ordine delle Ostetriche di Trieste (#1234)</p>
+      <p style="font-size:0.78rem; color:rgba(255,255,255,0.35)">Privacy Policy · <a href="#" style="color:var(--rose)">Cookie Policy</a></p>
+    </div>
     <button onclick="showPage('home')" style="background:none; border:none; color:var(--rose); font-size:0.82rem; cursor:pointer; letter-spacing:0.06em">← Torna alla home</button>
   </footer>
 </div>
@@ -822,65 +893,64 @@
         <div style="font-size:2rem; margin-bottom:1rem;">📄</div>
         <h3 style="font-family:var(--serif); font-size:1.2rem; font-weight:400; color:var(--warm-dark); margin-bottom:0.5rem;">Guida al pavimento pelvico</h3>
         <p style="font-size:0.88rem; color:var(--text-light); line-height:1.7; margin-bottom:1.25rem;">Tutto quello che dovresti sapere sul pavimento pelvico: anatomia, funzioni e segnali da non ignorare.</p>
-        <a href="#" onclick="downloadPDF('PDF1','guida_pavimento_pelvico.pdf'); return false;" style="font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--rose); text-decoration:none; display:flex; align-items:center; gap:0.4rem; font-weight:500;">Scarica PDF →</a>
+        <a href="1.pdf" download style="font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--rose); text-decoration:none; display:flex; align-items:center; gap:0.4rem; font-weight:500;">Scarica PDF →</a>
       </div>
       <div style="background:var(--white); border:1px solid var(--rose-mid); padding:2rem;">
         <div style="font-size:2rem; margin-bottom:1rem;">📄</div>
         <h3 style="font-family:var(--serif); font-size:1.2rem; font-weight:400; color:var(--warm-dark); margin-bottom:0.5rem;">Esercizi per il post-partum</h3>
         <p style="font-size:0.88rem; color:var(--text-light); line-height:1.7; margin-bottom:1.25rem;">Una routine di esercizi sicuri e progressivi per le prime settimane dopo il parto vaginale o cesareo.</p>
-        <a href="#" onclick="downloadPDF('PDF2','esercizi_post_partum.pdf'); return false;" style="font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--rose); text-decoration:none; display:flex; align-items:center; gap:0.4rem; font-weight:500;">Scarica PDF →</a>
+        <a href="2.pdf" download style="font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--rose); text-decoration:none; display:flex; align-items:center; gap:0.4rem; font-weight:500;">Scarica PDF →</a>
       </div>
       <div style="background:var(--white); border:1px solid var(--rose-mid); padding:2rem;">
         <div style="font-size:2rem; margin-bottom:1rem;">📄</div>
         <h3 style="font-family:var(--serif); font-size:1.2rem; font-weight:400; color:var(--warm-dark); margin-bottom:0.5rem;">Cistiti: prevenire con lo stile di vita</h3>
         <p style="font-size:0.88rem; color:var(--text-light); line-height:1.7; margin-bottom:1.25rem;">Abitudini quotidiane, alimentazione e igiene intima per ridurre le recidive delle cistiti ricorrenti.</p>
-        <a href="#" onclick="downloadPDF('PDF3','cistiti_prevenzione.pdf'); return false;" style="font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--rose); text-decoration:none; display:flex; align-items:center; gap:0.4rem; font-weight:500;">Scarica PDF →</a>
+        <a href="3.pdf" download style="font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--rose); text-decoration:none; display:flex; align-items:center; gap:0.4rem; font-weight:500;">Scarica PDF →</a>
       </div>
       <div style="background:var(--white); border:1px solid var(--rose-mid); padding:2rem;">
         <div style="font-size:2rem; margin-bottom:1rem;">📄</div>
         <h3 style="font-family:var(--serif); font-size:1.2rem; font-weight:400; color:var(--warm-dark); margin-bottom:0.5rem;">Il ciclo mestruale senza dolore</h3>
         <p style="font-size:0.88rem; color:var(--text-light); line-height:1.7; margin-bottom:1.25rem;">Strategie pratiche per gestire la dismenorrea nel quotidiano, in attesa di un percorso riabilitativo.</p>
-        <a href="#" onclick="downloadPDF('PDF4','ciclo_senza_dolore.pdf'); return false;" style="font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--rose); text-decoration:none; display:flex; align-items:center; gap:0.4rem; font-weight:500;">Scarica PDF →</a>
+        <a href="4.pdf" download style="font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--rose); text-decoration:none; display:flex; align-items:center; gap:0.4rem; font-weight:500;">Scarica PDF →</a>
       </div>
     </div>
   </div>
   <footer style="background:var(--warm-dark); border-top:1px solid rgba(255,255,255,0.08); padding:1.5rem 4rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem">
-    <p style="font-size:0.78rem; color:rgba(255,255,255,0.35)">© 2025 Angela Marietti</p>
+    <div style="display:flex; flex-direction:column; gap:0.3rem;">
+      <p style="font-size:0.78rem; color:rgba(255,255,255,0.35)">Angela Marietti · P.IVA 00000000000 · Iscritta all'Ordine delle Ostetriche di Trieste (#1234)</p>
+      <p style="font-size:0.78rem; color:rgba(255,255,255,0.35)">Privacy Policy · <a href="#" style="color:var(--rose)">Cookie Policy</a></p>
+    </div>
     <button onclick="showPage('home')" style="background:none; border:none; color:var(--rose); font-size:0.82rem; cursor:pointer; letter-spacing:0.06em">← Torna alla home</button>
   </footer>
 </div>
 
 <script>
-/* ─── PDF DATA (base64 embedded) ─────────────────────── */
-const PDF_DATA = {
-  PDF1: 'JVBERi0xLjQKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3VyY2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNCAwIFIgL0Y0IDUgMCBSIC9GNSA2IDAgUgo+PgplbmRvYmoKMiAwIG9iago8PAovQmFzZUZvbnQgL0hlbHZldGljYSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjEgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iagozIDAgb2JqCjw8Ci9CYXNlRm9udCAvVGltZXMtUm9tYW4gL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgL05hbWUgL0YyIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKNCAwIG9iago8PAovQmFzZUZvbnQgL1RpbWVzLUl0YWxpYyAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjMgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago1IDAgb2JqCjw8Ci9CYXNlRm9udCAvVGltZXMtQm9sZCAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjQgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago2IDAgb2JqCjw8Ci9CYXNlRm9udCAvSGVsdmV0aWNhLU9ibGlxdWUgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgL05hbWUgL0Y1IC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKNyAwIG9iago8PAovQ29udGVudHMgMTEgMCBSIC9NZWRpYUJveCBbIDAgMCA1OTUuMjc1NiA4NDEuODg5OCBdIC9QYXJlbnQgMTAgMCBSIC9SZXNvdXJjZXMgPDwKL0ZvbnQgMSAwIFIgL1Byb2NTZXQgWyAvUERGIC9UZXh0IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4gL1JvdGF0ZSAwIC9UcmFucyA8PAoKPj4gCiAgL1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjggMCBvYmoKPDwKL1BhZ2VNb2RlIC9Vc2VOb25lIC9QYWdlcyAxMCAwIFIgL1R5cGUgL0NhdGFsb2cKPj4KZW5kb2JqCjkgMCBvYmoKPDwKL0F1dGhvciAoXChhbm9ueW1vdXNcKSkgL0NyZWF0aW9uRGF0ZSAoRDoyMDI2MDYwNDE1MzUyOSswMCcwMCcpIC9DcmVhdG9yIChcKHVuc3BlY2lmaWVkXCkpIC9LZXl3b3JkcyAoKSAvTW9kRGF0ZSAoRDoyMDI2MDYwNDE1MzUyOSswMCcwMCcpIC9Qcm9kdWNlciAoUmVwb3J0TGFiIFBERiBMaWJyYXJ5IC0gXChvcGVuc291cmNlXCkpIAogIC9TdWJqZWN0IChcKHVuc3BlY2lmaWVkXCkpIC9UaXRsZSAoXChhbm9ueW1vdXNcKSkgL1RyYXBwZWQgL0ZhbHNlCj4+CmVuZG9iagoxMCAwIG9iago8PAovQ291bnQgMSAvS2lkcyBbIDcgMCBSIF0gL1R5cGUgL1BhZ2VzCj4+CmVuZG9iagoxMSAwIG9iago8PAovRmlsdGVyIFsgL0FTQ0lJODVEZWNvZGUgL0ZsYXRlRGVjb2RlIF0gL0xlbmd0aCAxMzg3Cj4+CnN0cmVhbQpHYXUxLj5FQE1zJjtCJDk9M1IvKV9LQyFmXUl1XkMpZDknJFZLVWhpS3BIQygkXS5oUmFvVkcrRiVGdGotZVpgbyRPKTkla1hMI2szSEtvXi5EUj4nXkxeKDFrRCJHNCcyZltwQWstOjg5UEYkWD8+bHUxP0E2RV1vNSVRPz1kVyRXYDYwOVwxSF5IOWI6KE1zMW8rXGIiUyF0WUlvXilXOjplMFZSLFEiQFJoZXBqJ19zMzVtbE9fN2I6THJGZTZUMWlyakVVWCxNKDNOZ1BfQGpYNj45c0hWcGRaWy8kPVBeWDAvazRvcklucGNKWnNWM2Q5aDsrLENyYk5vTSglYGFWcWBodGVAYVNEXkIrU2pbXVZHVT1MRU43TXBGKDVAa2VvQXQhKCw2cSRBWmx0T0spVWloRF0mR2pbLEJNbSJvVzNmW3AjJF9bI0ZIbUxWWC48OD4jRE1xYmRAbWhIaWM8NjsnbF8wJTIpK0VSPCkvWi9JTFdta2pzWzJlOy8vUCspciQ5LjVhSWdeNS40UWNkUElOJ3AlaDNNNSxoY2VrQFQ3KFc1SCxmdHJpIyJlMVwnKVgsWCtTbGohKl87c2JkJCYiM2pLQWUiI1xebXMrY1lEM0dCbXROO2xVJnRDM1wiWV1uLzYyUW1vU2xIP2duNzhrSitbWnI9OC48OlQrWE5xbyErNkUxMixLaypqRTApKFpJU0Nxc14sNTJwSTZPbWomWUBnZmE5XElULENEajhgJy9NZXFAZy9HL2YzLl1BYCUjLVUjak5lK0dLUF9vOnEzOTwiPVtWNC4/NyZBXD48Kjcmcz9aNFstT1IjO24wNiMkSGlKJEpIOmxQZSRETUcyQyNwWSQhZlZlOThOYWo/O1dDTWEjJmxKQTFOImUuNk9dJDJeZSNnJFgmPnNXJDs7KmtROVtPKC5dUWZkdEZcPnIqQzsmLlozQXRAQGtyWm1sSDBBLEtudDZIM0AjIzEhYEwnOmItMEVPQmpZYGM9PEYoJSlPaGtuKi1OI0ohKipyXCtCTChobkJyRCopK1MoYlRvREVOYUVHUTkqaWs5PzIxKF0oLFx1PkBGYGhXOE1QQE4vX2MuUCoiRSg1JFM/KElKNiYxcFVTNGhcVE9lZTNoNFg+Szt1XSwmY3EzckYzVm5tWSE+R2QmPFRPJUszQ0Urc2VVNHR0QlQtcVola2NGSTMxMkwyJGxzM15gc2syV2B1Qj9WLnMpXzVuTFwhTilxNkRGWFtPZmtJdFdFSTxdKFhWYlxIO29mMlFNbztERkNAWkwtXGAzI2FvdTxaVUs4JGttczZdcmhOJzozP2crKUo5UHUuViZZZlVAIiRiI1Q8PnBXZUI7J1Y0SEdTNDA+YVQpMk81RE5IdCFlIUhTTExLclZkVW1rPnJXNyNbKktoQzlkdU46azFeMTBMQCddVSNkK19EWSg7MXJpY0xOUDc0TiwpUmI2NT1aZyVJLi91RWNzVUVxJ25qJT0vV0IjJkxxTHA5Ni8ycXAqJyJLVTdmOG9wa0gkPDM+NCkoJFlWWVs2T0BALiw0S2hfWitNQSxhNVUoNE0zcWs0IlMzLV1VVywscUEyNCpIOVktJXRnNkhWPjpFSVVfU2c3b1NKTG9rWl1yMSYjJmxzbHRnTEJnPlVnOWlIaEA1RE9jXDg9KDFyYTFOPCVRJzEiVWJWTGdeMVYiQSJFRlc+T0Y7Vkoqc0tkNEkqRHFoSEhjX1JCNUkhc0hpJyUuKEdCRmokIk8+WGQnQCova1VrPTY5SWZBOmUzMUdIWz5AVnVwIisrb21fcGNpSWxqRUpMUEYiTUcvL1BZOEBuWCtcPHUzbH4+ZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgMTIKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDYxIDAwMDAwIG4gCjAwMDAwMDAxMzIgMDAwMDAgbiAKMDAwMDAwMDIzOSAwMDAwMCBuIAowMDAwMDAwMzQ4IDAwMDAwIG4gCjAwMDAwMDA0NTggMDAwMDAgbiAKMDAwMDAwMDU2NiAwMDAwMCBuIAowMDAwMDAwNjgxIDAwMDAwIG4gCjAwMDAwMDA4ODYgMDAwMDAgbiAKMDAwMDAwMDk1NSAwMDAwMCBuIAowMDAwMDAxMjM1IDAwMDAwIG4gCjAwMDAwMDEyOTUgMDAwMDAgbiAKdHJhaWxlcgo8PAovSUQgCls8NjFlOTNhN2RhYzlkZTE5ZGUyMWJkY2MyMTE5Y2RhNjQ+PDYxZTkzYTdkYWM5ZGUxOWRlMjFiZGNjMjExOWNkYTY0Pl0KJSBSZXBvcnRMYWIgZ2VuZXJhdGVkIFBERiBkb2N1bWVudCAtLSBkaWdlc3QgKG9wZW5zb3VyY2UpCgovSW5mbyA5IDAgUgovUm9vdCA4IDAgUgovU2l6ZSAxMgo+PgpzdGFydHhyZWYKMjc3NAolJUVPRgo=',
-  PDF2: 'JVBERi0xLjQKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3VyY2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNCAwIFIgL0Y0IDUgMCBSIC9GNSA2IDAgUgo+PgplbmRvYmoKMiAwIG9iago8PAovQmFzZUZvbnQgL0hlbHZldGljYSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjEgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iagozIDAgb2JqCjw8Ci9CYXNlRm9udCAvVGltZXMtUm9tYW4gL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgL05hbWUgL0YyIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKNCAwIG9iago8PAovQmFzZUZvbnQgL1RpbWVzLUl0YWxpYyAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjMgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago1IDAgb2JqCjw8Ci9CYXNlRm9udCAvVGltZXMtQm9sZCAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjQgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago2IDAgb2JqCjw8Ci9CYXNlRm9udCAvSGVsdmV0aWNhLU9ibGlxdWUgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgL05hbWUgL0Y1IC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKNyAwIG9iago8PAovQ29udGVudHMgMTEgMCBSIC9NZWRpYUJveCBbIDAgMCA1OTUuMjc1NiA4NDEuODg5OCBdIC9QYXJlbnQgMTAgMCBSIC9SZXNvdXJjZXMgPDwKL0ZvbnQgMSAwIFIgL1Byb2NTZXQgWyAvUERGIC9UZXh0IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4gL1JvdGF0ZSAwIC9UcmFucyA8PAoKPj4gCiAgL1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjggMCBvYmoKPDwKL1BhZ2VNb2RlIC9Vc2VOb25lIC9QYWdlcyAxMCAwIFIgL1R5cGUgL0NhdGFsb2cKPj4KZW5kb2JqCjkgMCBvYmoKPDwKL0F1dGhvciAoXChhbm9ueW1vdXNcKSkgL0NyZWF0aW9uRGF0ZSAoRDoyMDI2MDYwNDE1MzUyOSswMCcwMCcpIC9DcmVhdG9yIChcKHVuc3BlY2lmaWVkXCkpIC9LZXl3b3JkcyAoKSAvTW9kRGF0ZSAoRDoyMDI2MDYwNDE1MzUyOSswMCcwMCcpIC9Qcm9kdWNlciAoUmVwb3J0TGFiIFBERiBMaWJyYXJ5IC0gXChvcGVuc291cmNlXCkpIAogIC9TdWJqZWN0IChcKHVuc3BlY2lmaWVkXCkpIC9UaXRsZSAoXChhbm9ueW1vdXNcKSkgL1RyYXBwZWQgL0ZhbHNlCj4+CmVuZG9iagoxMCAwIG9iago8PAovQ291bnQgMSAvS2lkcyBbIDcgMCBSIF0gL1R5cGUgL1BhZ2VzCj4+CmVuZG9iagoxMSAwIG9iago8PAovRmlsdGVyIFsgL0FTQ0lJODVEZWNvZGUgL0ZsYXRlRGVjb2RlIF0gL0xlbmd0aCAxMzU0Cj4+CnN0cmVhbQpHYXUwQzlsSmZGJkFAc0JiXGNfa1giNVJeQStybS5CYzxkQSZdXDVNajltUFplTDtuRVY1USEyP2YqJDdUOGpwIkwmdGRiTz01LCpiZS8zV0BeKU1YTCZcRlpwaiE8ZUlxP0UpPURyYFtMcjknJl1PLCVERjI8I3FrI2tZbyk8NmhNLFsvLFg3ZG5gRidaVzQwKSs6US4sZzJTIz1jcFpgZl9VM25BMSkhPyVATiJxJU9WLFItWF9pbDhlWk4+PFwoXC1oYXEmMyIlIkxpVFJwdC5cYldZO1kmQ0lOckFVZy1KR0sha0teXT9pOlNFYHI7ajtRKWAoOjs1W1I2TW9mP14qYHA0M0p0MDVqUFE6ZVUjVm0mXjZvWFltTU8/JilWYkc4KCNnJjY6OTZUNilaTUozU11Va29ARWdjXmc5RkBPXyInSGlsMC9TNyNzdTBFJD9IKEFsQDMkUVhEKEo5KUwmNEEiYSdfPGw8dUI/VTRXclIyOWZrcG5OWSVQZCJaT3E9ckRgOV4sTUZDYkcwalxvOldqMy06bE4xRi84SCwxMCJUKGl0czFMRGNvWURhaylAJUY3PksoVVpzcycwPm1kYiotZD9OTGVNaEI0ZjJabCRWTCVDT142JEtYJk5EL1gia1IuUUNDXFlsLWFGWSwzQVpyND46WyxNK0dRP3VbY0NEOFNPO0NUb3RDYT9ySGMzbD0sN2RyXyZFTUY8SCkwRjB0YzROYmpIRnAsSDItIUVWJUZlRVhdaGpePDooaW1zVS0uLylTT3UuKjA7Lm9pQyc1LVImaDYiU2hFWVluYSI7SnUhclpkb2cvXVg5XWM/TXU/VlpwVGdCMD5sTyZwOkEmaF4xIzYmWExSJ3VmJSdPc0FuXWA8ajBqJSRZOGk2KlNrLjUzRGlJYi8hKlpiT11kTydvSXRjOWdkU15LZU1ZTGQ/UmciNj1IYj5WJUFpZzZlODVtaio6XTFVTzc1IWU3YnBBLDkwNiRHMlNvZURTWCRNLUsxMlwkPSEvWDBkTjkoTWt1ITpiTU9XMSZAIlRmR14kUD4/Y25TIUs2KlRaPjg8MWZLMihfPGA+dT8vYG5qcTFvc29VO0tIOThnbWo1PEpFXk5GLmEqZ0IpMiYiSVFna19XcCw1VmtHOj9FRlYpWU0sJiNCTSpoQGZXJ1ZsMyxLUjE0LXJpLmhLQilQamdpYk1qdWRVXzJkayQsYHJcZ0RUPSxxbzgtbV8nLTtnMW9oR14xQjs0bEBNYXI7Vi1PK2orZ3FIL15kQ2dyVmkodWRWM1pPNilQbmNqPio8QyU0MHQ+LEc3K2xEYzw8bTc7YlFGXGVVR1UsLC9LUz5jPEJnXCVQLnRWJ0hiKmc8JktdNjM8PSgmWDg0XG1YPiNoUHRZWDRaaGJeTTdXXSxDXSlOTWQ2SmEuYEoiSElDL2lLK2M5cjZSWVlALEZWVnE5VDhFRThIaDBmZFE3aTUnIWYzRTovQ2hHUFopWkU7NnN0TmMwTigyTj84RSkxVVpdXEU6WiEzYyhlYWstSD8lX1RJTjAsW2RvVz1rYV5qYT1udTNYZ14rWFgzIio2cC5jXkMtOWhxTi9wVFBYMjt0NG07bkYpPidyL0JPQGBdQ3QpaDheTjteJS8wTEZsYl0nUitEYlMicUhYWmBeJWV0RHBSPjI9V0w3JHMyUzo5SylMcUtAS0lXXitHSnEhKFhvZHEqVCZIPFNYYy1GOi4vZWokOzg1JDhLKj5fRm5QTm5hYVswIWEzUSpCRC5TUGxNTUh0akFKWnV1Izk/WGE8cn4+ZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgMTIKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDYxIDAwMDAwIG4gCjAwMDAwMDAxMzIgMDAwMDAgbiAKMDAwMDAwMDIzOSAwMDAwMCBuIAowMDAwMDAwMzQ4IDAwMDAwIG4gCjAwMDAwMDA0NTggMDAwMDAgbiAKMDAwMDAwMDU2NiAwMDAwMCBuIAowMDAwMDAwNjgxIDAwMDAwIG4gCjAwMDAwMDA4ODYgMDAwMDAgbiAKMDAwMDAwMDk1NSAwMDAwMCBuIAowMDAwMDAxMjM1IDAwMDAwIG4gCjAwMDAwMDEyOTUgMDAwMDAgbiAKdHJhaWxlcgo8PAovSUQgCls8YWZmOGRlNzZmZmVmZmQyNTlhNTViYjYwOWE4YjRkNGY+PGFmZjhkZTc2ZmZlZmZkMjU5YTU1YmI2MDlhOGI0ZDRmPl0KJSBSZXBvcnRMYWIgZ2VuZXJhdGVkIFBERiBkb2N1bWVudCAtLSBkaWdlc3QgKG9wZW5zb3VyY2UpCgovSW5mbyA5IDAgUgovUm9vdCA4IDAgUgovU2l6ZSAxMgo+PgpzdGFydHhyZWYKMjc0MQolJUVPRgo=',
-  PDF3: 'JVBERi0xLjQKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3VyY2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNCAwIFIgL0Y0IDUgMCBSIC9GNSA2IDAgUgo+PgplbmRvYmoKMiAwIG9iago8PAovQmFzZUZvbnQgL0hlbHZldGljYSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjEgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iagozIDAgb2JqCjw8Ci9CYXNlRm9udCAvVGltZXMtUm9tYW4gL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgL05hbWUgL0YyIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKNCAwIG9iago8PAovQmFzZUZvbnQgL1RpbWVzLUl0YWxpYyAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjMgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago1IDAgb2JqCjw8Ci9CYXNlRm9udCAvVGltZXMtQm9sZCAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjQgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago2IDAgb2JqCjw8Ci9CYXNlRm9udCAvSGVsdmV0aWNhLU9ibGlxdWUgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgL05hbWUgL0Y1IC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKNyAwIG9iago8PAovQ29udGVudHMgMTEgMCBSIC9NZWRpYUJveCBbIDAgMCA1OTUuMjc1NiA4NDEuODg5OCBdIC9QYXJlbnQgMTAgMCBSIC9SZXNvdXJjZXMgPDwKL0ZvbnQgMSAwIFIgL1Byb2NTZXQgWyAvUERGIC9UZXh0IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4gL1JvdGF0ZSAwIC9UcmFucyA8PAoKPj4gCiAgL1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjggMCBvYmoKPDwKL1BhZ2VNb2RlIC9Vc2VOb25lIC9QYWdlcyAxMCAwIFIgL1R5cGUgL0NhdGFsb2cKPj4KZW5kb2JqCjkgMCBvYmoKPDwKL0F1dGhvciAoXChhbm9ueW1vdXNcKSkgL0NyZWF0aW9uRGF0ZSAoRDoyMDI2MDYwNDE1MzUyOSswMCcwMCcpIC9DcmVhdG9yIChcKHVuc3BlY2lmaWVkXCkpIC9LZXl3b3JkcyAoKSAvTW9kRGF0ZSAoRDoyMDI2MDYwNDE1MzUyOSswMCcwMCcpIC9Qcm9kdWNlciAoUmVwb3J0TGFiIFBERiBMaWJyYXJ5IC0gXChvcGVuc291cmNlXCkpIAogIC9TdWJqZWN0IChcKHVuc3BlY2lmaWVkXCkpIC9UaXRsZSAoXChhbm9ueW1vdXNcKSkgL1RyYXBwZWQgL0ZhbHNlCj4+CmVuZG9iagoxMCAwIG9iago8PAovQ291bnQgMSAvS2lkcyBbIDcgMCBSIF0gL1R5cGUgL1BhZ2VzCj4+CmVuZG9iagoxMSAwIG9iago8PAovRmlsdGVyIFsgL0FTQ0lJODVEZWNvZGUgL0ZsYXRlRGVjb2RlIF0gL0xlbmd0aCAxMjk5Cj4+CnN0cmVhbQpHYXRtO2JBdVckJkE3bGpqc0ZxOzxXaiRcLSFhRFRmLVlMWzhZITJPUDpuVHIuWyxxcyU2ZFw7ZjtBWFA+J1xeMUFyRUp1QmMuJyNraW5MTCQ8bEA0ciYkJ19oSl9XNG1mZVB1MkU7KChRYUY8IyYiQm5cMVwoNk4nJGxuYS8wbE1zUzFmSUpgXU9bVUstNjs9VFhlL1dfR3UsNV1TcUpybS5MaidNTl9tOC0rNCgtbjY8RWcyOHRKNi1IMilkYyJNRkY6ITUsbGwsTiFwPSk5YWpWUDpyU0Q5SVgxTjlMamplTjtMXzdAUzVacjk4PHJyPSxDXiYtcFQzaWFmUy5fTUlARSxQI09KcVpYcHNKSj0vaUg/JThKUVo6IjpkJF4xVTxnQk9jPkknY0EoNVJPamw0YT82VkU5bCxNVUtkIiNRQ0lPbDlgbkViLUduaFQkYWA5WCc8ZDNuT1RqUjVxR2RWK1FzbnBJc1VXOSsrSDhOciFGYEEuSFphJDZpOEBycDgtbTI8SDtARHEkNXBDLyMiKlAzS3RkVWNmKjtuR2JdLVBWayxsSmRYQjNRPz4/USFRMjBpYi5ValByVHVeYW42VTF0NjojW2QsTXI0c2dAQnRYaU49LTdDcC8lblZMUy0wcWchbVRJJS91RywjU14qNExNdWUyRVBfQzglOyEsRFAjSC9hZnAlQT9bSDEhcUhBOlRmVW1vI3RHJi9YVjM2XWxIVylfLmllaTFyS2Q6NSpqVWxLSUZmaFlIS1BJPU4iSDs5ZyxrLlJLZWVNV2RcKS5PUS0tJ2hAOytiWSdwVS05cEtNJDMhW2Roc0k0ZDM8cSYhUCpNc29OKnIyUTchV0RYSChxKFwlSU9QVTdZb2dAXTQhZS1eJy8+bF5nWl9pN08tWTdIWFtkTjpgaVxVPStmbEA+TUAuQ2gzZlkkVi81MSRPUmFRVmxFRyQjY1UyKG9wUm9Mblc7RWoiUT9tOkB1IyJON2BQMXI3cUYhO1ZJJydIPGlPNV80ZGdsLmUuZUU+USN0PktYLzdKRSNDWDtxO1FgSW5HdVtcaVY1X0w6WjouXFdEbTc1bzY+LCxuOUxzMFQuYzM5WjwrX2E6IXNMLjZHZT9gJlo6OEo3UGBwLFFIJ145KVFgQXBeJ0kpQEpdQ2NvYGokN1ddcj9MRlpZVVJmSTxNNnQnNEhKcGVjKTpZOShwdF5aOGZpTEEoYERkOj0pXDgsMjdjMyItcldQaDs4JSMmSFlwR0FkNCxCM1kkP3BFQ25EVDU2IyVBSF4jcj5LK2RyYiksSyUnbDEnaDIwKS0pQUNDMDpRR2A4MXVlR1NsTEQxTElkKTspPlUnRkFjLGpgayI/a0BhXWgxIVAkIk0wcFUoX2hGNkRYbSpJWClNSTlbXTUvSVVtYVpFSE8oRV8iZGs5LWBFNVhWYW8pOVlKM1dHb1FQPGtATmY/VFclQT5adCwiMj5xPSFTU2AkM1wnRVk6NWFbTGhjb0xzTkMkOVU5PU1MREphXkwpJDo8JUZzIURzOSJPYD1bJT9GSi04R1ZQb0xRaWJQQmM+XmhIKEtBTmw0SUpnUkchTEoyLj1eL1wjPll0P0ZGUEE4bkpoQWNWPTRHUmxAJlkjWm9XSiJLIkQ3TFxaciFXNVVMREo+cGxlNkRwNktPcFpPb0Y+KD9ORGpQSDlgOlRtMy8+Sm5LKiJNOjYkSm43Ij8mKzZeI1lRfj5lbmRzdHJlYW0KZW5kb2JqCnhyZWYKMCAxMgowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwNjEgMDAwMDAgbiAKMDAwMDAwMDEzMiAwMDAwMCBuIAowMDAwMDAwMjM5IDAwMDAwIG4gCjAwMDAwMDAzNDggMDAwMDAgbiAKMDAwMDAwMDQ1OCAwMDAwMCBuIAowMDAwMDAwNTY2IDAwMDAwIG4gCjAwMDAwMDA2ODEgMDAwMDAgbiAKMDAwMDAwMDg4NiAwMDAwMCBuIAowMDAwMDAwOTU1IDAwMDAwIG4gCjAwMDAwMDEyMzUgMDAwMDAgbiAKMDAwMDAwMTI5NSAwMDAwMCBuIAp0cmFpbGVyCjw8Ci9JRCAKWzw2NjFjNmRmZDgzYWE4Mjk2ZjJjMTNkZWY0NzA4OWQxMz48NjYxYzZkZmQ4M2FhODI5NmYyYzEzZGVmNDcwODlkMTM+XQolIFJlcG9ydExhYiBnZW5lcmF0ZWQgUERGIGRvY3VtZW50IC0tIGRpZ2VzdCAob3BlbnNvdXJjZSkKCi9JbmZvIDkgMCBSCi9Sb290IDggMCBSCi9TaXplIDEyCj4+CnN0YXJ0eHJlZgoyNjg2CiUlRU9GCg==',
-  PDF4: 'JVBERi0xLjQKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3VyY2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNCAwIFIgL0Y0IDUgMCBSIC9GNSA2IDAgUgo+PgplbmRvYmoKMiAwIG9iago8PAovQmFzZUZvbnQgL0hlbHZldGljYSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjEgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iagozIDAgb2JqCjw8Ci9CYXNlRm9udCAvVGltZXMtUm9tYW4gL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgL05hbWUgL0YyIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKNCAwIG9iago8PAovQmFzZUZvbnQgL1RpbWVzLUl0YWxpYyAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjMgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago1IDAgb2JqCjw8Ci9CYXNlRm9udCAvVGltZXMtQm9sZCAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjQgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago2IDAgb2JqCjw8Ci9CYXNlRm9udCAvSGVsdmV0aWNhLU9ibGlxdWUgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgL05hbWUgL0Y1IC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKNyAwIG9iago8PAovQ29udGVudHMgMTEgMCBSIC9NZWRpYUJveCBbIDAgMCA1OTUuMjc1NiA4NDEuODg5OCBdIC9QYXJlbnQgMTAgMCBSIC9SZXNvdXJjZXMgPDwKL0ZvbnQgMSAwIFIgL1Byb2NTZXQgWyAvUERGIC9UZXh0IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4gL1JvdGF0ZSAwIC9UcmFucyA8PAoKPj4gCiAgL1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjggMCBvYmoKPDwKL1BhZ2VNb2RlIC9Vc2VOb25lIC9QYWdlcyAxMCAwIFIgL1R5cGUgL0NhdGFsb2cKPj4KZW5kb2JqCjkgMCBvYmoKPDwKL0F1dGhvciAoXChhbm9ueW1vdXNcKSkgL0NyZWF0aW9uRGF0ZSAoRDoyMDI2MDYwNDE1MzUyOSswMCcwMCcpIC9DcmVhdG9yIChcKHVuc3BlY2lmaWVkXCkpIC9LZXl3b3JkcyAoKSAvTW9kRGF0ZSAoRDoyMDI2MDYwNDE1MzUyOSswMCcwMCcpIC9Qcm9kdWNlciAoUmVwb3J0TGFiIFBERiBMaWJyYXJ5IC0gXChvcGVuc291cmNlXCkpIAogIC9TdWJqZWN0IChcKHVuc3BlY2lmaWVkXCkpIC9UaXRsZSAoXChhbm9ueW1vdXNcKSkgL1RyYXBwZWQgL0ZhbHNlCj4+CmVuZG9iagoxMCAwIG9iago8PAovQ291bnQgMSAvS2lkcyBbIDcgMCBSIF0gL1R5cGUgL1BhZ2VzCj4+CmVuZG9iagoxMSAwIG9iago8PAovRmlsdGVyIFsgL0FTQ0lJODVEZWNvZGUgL0ZsYXRlRGVjb2RlIF0gL0xlbmd0aCAxMzUyCj4+CnN0cmVhbQpHYXUxLj5Bck9bJjtCJDUuZz9AcThXKEhvVzJvTnVoLzgsZCQyK3VyayhTcEdGVUV0KTgxSSgsbFsoJiNOakg+aGUzWFBcUTZqYDZWX14sQTdNLjZCTVQzdUosUGxbWzVRKUt0LFxVSV5QVW1HTj9kZWlFZEc3W2xFK1lbbk1DYVl1YiouKFQnUUptLWlUR24rSCcxWShMbCxjViclZ2ViLT8/RTomWnV1bC9ANGNLS0hOISUmTyVpczAsRFpNUSkzSGtNR0FWPWtvSCttVGUjNjsqRnU1Nz4zViRCP1ZHNzozaTJMVlsvUTM1VERmOmFUQ0RbbVdDUk9rbzpjZTk4ck4lZTM4TyFlNlE1RjMoZUlOK11wMm5dWEpqL1UwKXJqK0FaOnFvWjBSVzRlZ2E2TTprTCRZSys1bGNYX25pdVw8PC9DcE8jRlBTNitRZi48a09XIWRxQDtKPC9vNF1gMzZNLTloSFFVclAhLVBVK1gjOiNbIU8vUjpTYnEudT5iMEU6RFFaTGlYIjNTZlJaOl9cdU0nci0hWkNjLXMvXHBcK3NkQTJmZSVAJDFfczVuR21ZaGdPI09yJFt1VSxacyVDbTNDSUhqKGRpL0ozImIpTXRiXmtqaUhDSEhSPVxLWktSaUIzLVJfPVc8TVVYZDIxSlYtM2sjN1ZiRiRDK2tYSTxuOz5tY0RackZdQSkpcl9bNVhVZmxBQ0hocXIrbE5jQHQ3Vi0yL2xhM0dYKmk6XmxdbDVGcUZuc0VJRFgyMU1BKiZqPihFUjRAbFpzRz1qZi10Ik0oVi5TbmY7YltaXzBFK2JDLDpEYjpDXGNfUTlrXztZWkAhQydjblVrQ2RAN0ctSF5DVS1jWlgxOW8zdSZUTmJvcyooK2N1YklbZUtQQU1WZiVIMFFQUjgyLzNGRF9HIjNdJCNjXGBYTVQnQE5UWGxUXzgvQilxOVplcl1LXjFrX0FjKD0sXEo9aDEtK2dvcydvLEVUOzo7bTxUKSFpQGxlUmMka1IxY0pGVUcoZDtnRmZoO0ouRz4xVi9DbFQpTmk/R3MyJSU3JDtIOykvNmNHPWE7bk5VMFhDZDRjZCZCTCthKWxDTlgnY1deWk43XiEsSCFSNFZWZjZOJjdKTi5jMDVCcEJGUT9JRjRONDBINWZ1MiJTPkMzPGxcdVVsRVAlKGN1TFhCYWJJQ0NfPS1IW0RuV3I8VkQ+MzIrLSM8XzFjPjFGcDAsPFs5KW8uUUZpTDIkRTNSLyImbi1yLEBWM0otXDsrbV5IVXAkK2VgZ2puJDJxWGdOQSY7R0pQOFlWamlqNyFCXVlxTURXJDdDRmZXPDNiMVRzbjdWTylJU1dXQCZvUUBhVFIkbUMwaSheW14xJnRlX0JjP1dSaFFaXilQJ1hcMWI/aFVOQlRObGVQTFhLV25TKylyNklJPDBZQHJJYlRRXnFHVGw9O0A4ayhJWElhWl5dTWRnI2tbXEdMMGRMQ2heQV80aHJANDRqblVUOT87OCFqbCotLkVCbS1VOTwhKyFiV2QyN2EpKWEyKU5vUzhyUSpSJ0ZZVTpVRyI6SGxsJD1SckwtNyc/XCRKUixcYSlrOmkvcmNxXCstNlg8QEAkdHN0QSFnJ24jVGE6dDo/blknYUUsW2EhVUw4XSo5Vj4oU1FgIzMjVWpjcCpcZSdeQ0FjNmxMaGUyYjA+SjtQZyVOYGhYX0ZpMFdfYyZ0JT09LGghY2ttUCpuXE1RUE1UNS9RamkqUHNBRHFlY0hbSTY6bFxBcyxDbyUqOmZdaFUsKVsrWG1+PmVuZHN0cmVhbQplbmRvYmoKeHJlZgowIDEyCjAwMDAwMDAwMDAgNjU1MzUgZiAKMDAwMDAwMDA2MSAwMDAwMCBuIAowMDAwMDAwMTMyIDAwMDAwIG4gCjAwMDAwMDAyMzkgMDAwMDAgbiAKMDAwMDAwMDM0OCAwMDAwMCBuIAowMDAwMDAwNDU4IDAwMDAwIG4gCjAwMDAwMDA1NjYgMDAwMDAgbiAKMDAwMDAwMDY4MSAwMDAwMCBuIAowMDAwMDAwODg2IDAwMDAwIG4gCjAwMDAwMDA5NTUgMDAwMDAgbiAKMDAwMDAwMTIzNSAwMDAwMCBuIAowMDAwMDAxMjk1IDAwMDAwIG4gCnRyYWlsZXIKPDwKL0lEIApbPDVjYTFhZjMwZjdkNmMxNTU4YTNkNDJhODE5ZTUzMjk0Pjw1Y2ExYWYzMGY3ZDZjMTU1OGEzZDQyYTgxOWU1MzI5ND5dCiUgUmVwb3J0TGFiIGdlbmVyYXRlZCBQREYgZG9jdW1lbnQgLS0gZGlnZXN0IChvcGVuc291cmNlKQoKL0luZm8gOSAwIFIKL1Jvb3QgOCAwIFIKL1NpemUgMTIKPj4Kc3RhcnR4cmVmCjI3MzkKJSVFT0YK'
+/* ─── WHATSAPP CONTACT ─────────────────────────────────── */
+const WHATSAPP_NUMBER = "393330000000";
+
+const LOCATION_MESSAGES = {
+  Udine: "Ciao Angela! Vorrei prenotare una visita nel tuo studio di Udine. Quando sei disponibile?",
+  Pianborno: "Ciao Angela! Vorrei prenotare una visita nel tuo studio di Pianborno. Quando sei disponibile?",
+  Trieste: "Ciao Angela! Vorrei prenotare una visita nel tuo studio di Trieste. Quando sei disponibile?",
+  Online: "Ciao Angela! Vorrei prenotare una visita online (Zoom/Google Meet). Quando sei disponibile?"
 };
 
-function downloadPDF(key, filename) {
-  const b64 = PDF_DATA[key];
-  const binary = atob(b64);
-  const bytes = new Uint8Array(binary.length);
-  for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
-  const blob = new Blob([bytes], { type: 'application/pdf' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url; a.download = filename; a.click();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
+function contactWhatsApp(location) {
+  const message = LOCATION_MESSAGES[location] || "Ciao Angela! Vorrei prenotare una visita.";
+  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+  window.open(url, '_blank');
 }
 
 /* ─── DATA ───────────────────────────────────────────── */
 const services = [
-  { id:'mestruazioni', icon:'🌸', title:'Mestruazioni dolorose', short:'Dismenorrea, endometriosi funzionale e ciclo irregolare trattati con approccio integrato.', lead:'Il dolore mestruale non deve essere considerato "normale". Esistono soluzioni.', body:['La dismenorrea primaria colpisce fino al 90% delle donne in età fertile, spesso accompagnata da crampi debilitanti, nausea e affaticamento. La causa può essere muscolare, ormonale, neuronale o una combinazione di fattori.','Attraverso la valutazione del pavimento pelvico, identifico tensioni muscolari, aderenze miofasciali e pattern posturali che contribuiscono al dolore. La riabilitazione pelvica può ridurre significativamente l\'intensità dei sintomi già dopo pochi cicli di trattamento.','Il percorso include tecniche manuali, esercizi di rilascio diaframmatico, educazione alle neuroscienze del dolore e strategie di self-care.'], symptoms:['Crampi intensi prima o durante il ciclo','Dolore irradiato alla schiena e alle gambe','Gonfiore pelvico','Stanchezza e irritabilità premestruale','Dolore durante i rapporti in fase premestruale'] },
-  { id:'cistiti', icon:'💧', title:'Cistiti ricorrenti', short:'Prevenzione e trattamento delle infezioni urinarie croniche attraverso riabilitazione pelvica.', lead:'Più della metà delle donne soffre di cistiti ricorrenti. Non è una condanna.', body:['Le cistiti ricorrenti non sono solo un problema batterico: spesso riflettono uno squilibrio del microbioma vaginale, una disfunzione del pavimento pelvico o cattive abitudini vescicali che favoriscono la proliferazione batterica.','La riabilitazione del pavimento pelvico può ridurre la frequenza delle recidive agendo sui fattori predisponenti: tensioni muscolari che alterano lo svuotamento vescicale, posture minzionali scorrette, abitudini di idratazione.','Lavoro in sinergia con l\'uroginecologia per un approccio integrato che combina riabilitazione, educazione e, dove necessario, supporto farmacologico.'], symptoms:['Bruciore durante la minzione','Urgenza urinaria frequente','Dolore sovrapubico','Ricorrenza dopo rapporti sessuali','Microematuria ricorrente'] },
-  { id:'incontinenza', icon:'🌿', title:'Incontinenza urinaria', short:'Perdite da sforzo, urgenza urinaria e vescica iperattiva: soluzioni concrete e durevoli.', lead:'L\'incontinenza urinaria si può trattare. Coinvolge 1 donna su 3.', body:['L\'incontinenza urinaria è una delle condizioni più diffuse ma meno discusse. Molte donne la accettano come inevitabile, ma esistono trattamenti riabilitativi molto efficaci, spesso superiori alla chirurgia per le forme lievi-moderate.','Distinguo tra incontinenza da sforzo (perdite con tosse, starnuti, salti), incontinenza da urgenza (difficoltà a trattenersi) e forme miste. Ogni tipo richiede un approccio specifico.','Il programma riabilitativo include rieducazione della muscolatura del pavimento pelvico, biofeedback, tecniche di normalizzazione della sensibilità vescicale e strategie comportamentali.'], symptoms:['Perdite di urina con tosse o starnuto','Urgenza improvvisa difficile da controllare','Frequenza urinaria aumentata','Necessità di alzarsi di notte per urinare','Disagio nei rapporti o nell\'attività fisica'] },
-  { id:'post-parto', icon:'🤱', title:'Riabilitazione post-partum', short:'Recupero fisico dopo il parto vaginale o cesareo, per un ritorno alla vita in piena salute.', lead:'Il corpo dopo il parto merita cura, tempo e un piano di recupero personalizzato.', body:['Il periodo post-parto è una fase di profonda trasformazione fisica e ormonale. Sia dopo parto vaginale che cesareo, il pavimento pelvico e la muscolatura addominale necessitano di un percorso di riabilitazione attento.','Inizio la valutazione non prima di 6-8 settimane dal parto, per rispettare i tempi fisiologici di guarigione. Ogni piano è personalizzato e tiene conto del tipo di parto, di eventuali lacerazioni o episiotomia, dell\'allattamento e delle esigenze quotidiane.','Il percorso affronta: riattivazione muscolare progressiva, gestione delle cicatrici, recupero della funzione vescicale e intestinale, ripresa dell\'attività fisica e sessuale.'], symptoms:['Dolore alla cicatrice da episiotomia o cesareo','Perdite urinarie post-parto','Sensazione di pesantezza pelvica','Difficoltà nella ripresa dell\'attività sessuale','Diastasi dei muscoli addominali'] },
-  { id:'sessualita', icon:'✨', title:'Dolore nei rapporti', short:'Dispareunia, vaginismo e vulvodinia: affrontate con rispetto, competenza e delicatezza.', lead:'Il dolore durante i rapporti sessuali non è normale. Si può e si deve trattare.', body:['La dispareunia (dolore durante i rapporti) e il vaginismo (contrazione involontaria dei muscoli vaginali) sono condizioni trattabili che impattano profondamente la qualità di vita e la relazione di coppia.','Spesso c\'è una componente muscolare: ipertono del pavimento pelvico, ipersensibilità nervosa, tensioni fasciali. Lavoro con tecniche manuali, dilatatori progressivi e educazione alla risposta del sistema nervoso.','L\'approccio è sempre molto rispettoso dei tempi della paziente. Collaboro con ginecologi e sessuologi per una presa in carico multidisciplinare quando necessario.'], symptoms:['Dolore all\'ingresso vaginale','Impossibilità alla penetrazione','Bruciore o irritazione dopo i rapporti','Tensione muscolare involontaria','Dolore vulvare cronico (vulvodinia)'] },
-  { id:'prolasso', icon:'🏥', title:'Prolasso degli organi pelvici', short:'Trattamento conservativo del prolasso uterino, vescicale e rettale prima di valutare l\'opzione chirurgica.', lead:'Il prolasso si può trattare con la riabilitazione nella maggioranza dei casi.', body:['Il prolasso degli organi pelvici si verifica quando utero, vescica o retto perdono il loro normale supporto e scendono verso o attraverso la vagina. Coinvolge circa il 30-40% delle donne in menopausa.','La riabilitazione è il trattamento di prima linea per i prolassi di grado I e II. Un programma riabilitativo adeguato può migliorare significativamente i sintomi e rallentare la progressione.','Il percorso include rafforzamento mirato del pavimento pelvico, educazione alla gestione delle pressioni addominali, correzione delle posture e delle abitudini che aggravano il prolasso.'], symptoms:['Sensazione di "peso" o "pallina" in vagina','Difficoltà a svuotare la vescica completamente','Dolore lombare durante la stazione eretta','Difficoltà all\'evacuazione','Disagio durante i rapporti sessuali'] },
-  { id:'menopausa', icon:'🌙', title:'Menopausa e salute pelvica', short:'Gestione dei disturbi genitourinari della menopausa: secchezza, atrofia, urgenza urinaria.', lead:'La menopausa è una transizione, non una resa. La salute pelvica si mantiene.', body:['Il Sindrome Genitourinaria della Menopausa (GSM) comprende secchezza vaginale, dispareunia, urgenza urinaria, infezioni ricorrenti. Colpisce oltre il 50% delle donne in post-menopausa.','La riabilitazione del pavimento pelvico è parte integrante della gestione della GSM: mantiene l\'elasticità dei tessuti, migliora la vascolarizzazione, riduce la sintomatologia urinaria.','Combino riabilitazione manuale, esercizi specifici e, in collaborazione con il ginecologo, trattamenti topici o sistemici quando indicati.'], symptoms:['Secchezza e irritazione vaginale','Dolore durante i rapporti','Urgenza e frequenza urinaria aumentate','Infezioni urinarie e vaginali ricorrenti','Sensazione di bruciore vulvare'] },
-  { id:'diastasi', icon:'💪', title:'Diastasi addominale', short:'Recupero della parete addominale e della funzione del core dopo gravidanza o altra causa.', lead:'La diastasi dei retti addominali si può migliorare con il giusto percorso.', body:['La diastasi dei muscoli retti addominali è la separazione della linea alba, frequente dopo la gravidanza. Causa instabilità del core, dolore lombare, difficoltà funzionali e problematiche estetiche.','Non tutti gli esercizi addominali sono indicati per la diastasi: alcuni la peggiorano. Costruisco un programma progressivo che ristabilisce la funzione del core senza aumentare la pressione intra-addominale.','Valuto la diastasi con test funzionali specifici e monitoro il progresso durante tutto il percorso. Fornisco indicazioni precise per le attività quotidiane e sportive.'], symptoms:['Protuberanza lungo la linea centrale dell\'addome','Dolore lombare cronico','Sensazione di instabilità del tronco','Addome non piatto mesi dopo il parto','Ernia ombelicale associata'] }
+  { id:'mestruazioni', icon:'🌸', title:'Ciclo mestruale: un equilibrio da ritrovare', short:'Ti è sempre stato detto che soffrire durante il ciclo sia normale? E se ti dicessi che non deve essere per forza un incubo mensile?', lead:'Ti è sempre stato detto che soffrire durante il ciclo sia normale? E se ti dicessi che non deve essere per forza un incubo mensile?', body:["Il ciclo mestruale è un equilibrio delicato, un ritmo naturale che dovrebbe scorrere senza stravolgere la tua quotidianità. Spesso tendiamo a sopportare, convinte che il dolore faccia parte del “pacchetto”, ma la verità è che soffrire non è normale: il malessere invalidante durante le mestruazioni o i forti fastidi legati all'ovulazione non dovrebbero mai essere l'incubo mensile di una persona."], symptoms:['Dolore durante le mestruazioni',"Fastidio durante l'ovulazione","Problemi mestruali: irregolarità, flussi abbondanti","Sensazione di pesantezza pelvica nei giorni del ciclo","Difficoltà o impossibilità di utilizzo dei tamponi o della coppetta mestruale","Gonfiore addominale"], help:"Il mio approccio punta a restituirti serenità e consapevolezza, perché vivere il proprio ritmo biologico non deve significare rassegnarsi al dolore. Insieme, possiamo lavorare per far sì che il tuo ciclo torni a essere un momento della vita da abbracciare, permettendoti di riprendere in mano le tue giornate in piena libertà." },
+  { id:'rapporti', icon:'🌙', title:'Rapporti sessuali: Ritrovare il piacere senza dolore', short:"Hai iniziato a vivere l'intimità con ansia o paura, sperando ogni volta che 'stavolta non faccia male” oppure “stringo un attimo i denti'?", lead:"Hai iniziato a vivere l'intimità con ansia o paura, sperando ogni volta che 'stavolta non faccia male” oppure “stringo un attimo i denti”?", body:['La sessualità è una parte integrante del nostro benessere e non vale meno di qualsiasi altro aspetto della nostra salute. È un territorio di scoperta e connessione che merita cura e attenzione, ma quando compaiono dolore o difficoltà, questo equilibrio si spezza. Voglio dirti una cosa fondamentale: provare dolore non è una colpa, né una condizione con cui devi imparare a convivere.',"Che si tratti di un fastidio all'inizio del rapporto, di un dolore profondo durante o di un malessere che compare solo “dopo”, ogni segnale è importante e merita di essere indagato. Non è mai un problema di serie B e non va mai sottovalutato: la tua serenità intima ha lo stesso valore di ogni altra funzione del tuo corpo. Il mio lavoro consiste nell'aiutarti a sciogliere queste tensioni per permetterti di abitare nuovamente il tuo corpo con fiducia, affinché l'intimità torni a essere un momento della vita da abbracciare in totale libertà."], symptoms:['Dolore profondo durante il rapporto in determinate posizioni','Dolore o bruciore alla penetrazione','Impossibilità ai rapporti',"Difficoltà all'orgasmo","Fastidio, indolenzimento o senso di peso che compare nelle ore successive al rapporto","Nuove scoperte"], help:"Il mio lavoro consiste nell'aiutarti a sciogliere queste tensioni per permetterti di abitare nuovamente il tuo corpo con fiducia, affinché l'intimità torni a essere un momento della vita da abbracciare in totale libertà." },
+  { id:'menopausa', icon:'🌿', title:'Menopausa: Nuovi equilibri per una nuova fase.', short:'Ti senti tradita dal tuo corpo proprio ora che vorresti goderti la tua libertà, tra fastidi intimi e piccoli imprevisti che non avevi invitato a questa nuova festa?', lead:'Ti senti tradita dal tuo corpo proprio ora che vorresti goderti la tua libertà, tra fastidi intimi e piccoli imprevisti che non avevi invitato a questa nuova festa?', body:['La menopausa non è un traguardo, ma una transizione profonda che coinvolge il corpo e le emozioni. È un cambiamento che può spaventare o far sentire fragili, specialmente quando si manifestano sintomi come la secchezza vaginale — che è solo uno dei tanti segnali di un equilibrio che si sta trasformando.','Voglio che tu sappia che non devi affrontare tutto questo in solitudine o con rassegnazione: questo passaggio non deve rappresentare una fine, ma un nuovo inizio.'], symptoms:['Secchezza vaginale',"Calo del desiderio o fastidio durante l'intimità","Perdite di urina sotto sforzo (tosse, starnuti) o urgenza improvvisa.","Senso di ingombro o pesantezza vaginale (segnali di iniziale prolasso)"], help:"Il mio obiettivo è accompagnarti, offrendoti gli strumenti per gestire i cambiamenti fisici e ritrovare il tuo benessere intimo. Insieme possiamo fare in modo che la menopausa smetta di essere un limite e diventi una fase di nuova e consapevole scoperta del proprio corpo" },
+  { id:'sport', icon:'💪', title:'Prevenzione e sport: Custodire la propria forza.', short:'Sei sicura che la tua base sia veramente solida e in salute?', lead:'Sei sicura che la tua base sia veramente solida e in salute?', body:["Non serve aspettare che compaia un sintomo per iniziare a prendersi cura di sé. Il pavimento pelvico è il centro dinamico del nostro corpo, un sostegno silenzioso che merita attenzione anche quando tutto sembra andare bene. In un'ottica di prevenzione, avere un quadro chiaro del proprio benessere pelvico è il primo passo per mantenere un equilibrio duraturo. Questo è ancora più importante per chi pratica sport: l'attività fisica, pur essendo fondamentale per la salute, può sottoporre l'area pelvica a carichi e pressioni importanti."], symptoms:["Pratichi sport ad alto impatto (crossfit, corsa, salto della corda, pesistica).","Avverti piccole perdite di urina durante l'allenamento.","Senti una pressione verso il basso durante gli sforzi addominali.","Vuoi semplicemente conoscere lo stato di salute del tuo pavimento pelvico"], help:"Conoscere come il tuo corpo reagisce allo sforzo ti permette di allenarti in totale sicurezza, proteggendo la tua integrità e migliorando le tue performance. Investire nella prevenzione significa conoscersi oggi per non doversi curare domani, trasformando la consapevolezza in una forma di amore verso se stesse" },
+  { id:'post-parto', icon:'🤱', title:'Gravidanza e post parto: Accompagnare la vita.', short:'Il tuo corpo sa come comportarsi, ma tu sai come accompagnarlo con fiducia in questa trasformazione?', lead:'Il tuo corpo sa come comportarsi, ma tu sai come accompagnarlo con fiducia in questa trasformazione?', body:["La nascita di un figlio è una rivoluzione che trasforma il corpo e l'anima. Prepararsi al parto non significa solo pianificare un evento, ma conoscere e preparare il proprio corpo ad accogliere questo cambiamento con consapevolezza e fiducia. Il mio obiettivo è fornirti gli strumenti per vivere l'attesa con serenità, proteggendo il tuo pavimento pelvico e preparandolo alla forza del momento della nascita."], symptoms:['Preparazione del corpo al parto (massaggio del perineo, mobilità del bacino, posizioni favorevoli).','Gestione del travaglio consapevole','Riabilitazione e controllo dopo il parto (naturale o cesareo).','Trattamento di cicatrici (lacerazioni, episiotomia o cesareo) '], help:"Voglio essere al tuo fianco per ricordarti che anche tu meriti cura e ascolto. Che si tratti di recuperare la funzionalità pelvica, gestire le cicatrici o semplicemente ritrovare confidenza con il tuo nuovo corpo, lavoreremo insieme affinché questo percorso di rinascita sia un momento della vita da abbracciare con amore e pazienza verso se stesse." },
+  { id:'infezioni', icon:'💧', title:"Infezioni urinarie e vaginali ricorrenti: oltre il sintomo, per ritrovare l'equilibrio.", short:"Ti senti prigioniera di un ciclo infinito di fastidi, tra creme e antibiotici che sembrano non bastare mai?", lead:'Ti senti prigioniera di un ciclo infinito di fastidi, tra creme e antibiotici che sembrano non bastare mai?', body:['Cistiti che ritornano, candide che sembrano non passare mai o fastidi vaginali cronici possono diventare un peso insostenibile come prurito, bruciore e perdite insolite, condizionando la tua quotidianità, il tuo umore e la tua intimità. Spesso ci si sente intrappolate in un circolo vizioso di cure temporanee che mettono a tacere il sintomo, ma non ne risolvono la causa.'], symptoms:['Cistiti batteriche o abatteriche che tornano ciclicamente.','Candide recidivanti che non rispondono più alle creme comuni.','Vaginiti o vaginosi frequenti (fastidi, perdite, odori).','Bruciore uretrale o vaginale persistente anche dopo la cura antibiotica'], help:"Il mio approccio nasce per interrompere questa sequenza: non ci fermeremo alla superficie, ma lavoreremo insieme per indagare le radici di queste ricorrenze e ricostruire le difese naturali del tuo corpo." },
+  { id:'vulvodinia', icon:'🏥', title:'Vulvodinia e Vaginismo: Dare un nome e uno spazio al dolore', short:"E se ti dicessi che quello che provi non è 'solo nella tua testa', ma ha un nome e una via d'uscita?", lead:"E se ti dicessi che quello che provi non è 'solo nella tua testa', ma ha un nome e una via d'uscita?", body:["Per troppo tempo il dolore invisibile è stato ignorato o etichettato come “solo stress”. Se avverti bruciore, spilli o una tensione che rende difficile l'intimità o i gesti quotidiani, voglio che tu sappia una cosa: il tuo dolore è reale e ha un nome. La vulvodinia e il vaginismo non sono colpe, né sentenze, ma condizioni che meritano un approccio specialistico e, soprattutto, umano. Il mio lavoro è offrirti uno spazio sicuro dove il tuo vissuto viene finalmente accolto senza giudizio. Attraverso un percorso personalizzato e rispettoso dei tuoi ritmi, lavoreremo insieme per sciogliere non solo le tensioni fisiche, ma anche le sensazioni che spesso le accompagna."], symptoms:['Bruciore o sensazione di “spilli” costante o scatenato dal contatto (anche solo con la biancheria).',"Sensazione di “taglietti” o abrasioni superficiali, anche in assenza di lesioni visibili.","Difficoltà a stare seduta a lungo, ad andare in bicicletta o a indossare pantaloni aderenti.","Sensazione di muro/ingombro ai rapporti"], help:"Il mio obiettivo è restituirti il diritto di abitare il tuo corpo con serenità, trasformando il dolore in una strada di guarigione e di profonda riconnessione con te stessa." },
+  { id:'dolore', icon:'✨', title:'Dolore pelvico cronico, Endometriosi e Adenomiosi: Oltre la sofferenza cronica', short:'Quanto spazio occupa il dolore nella tua giornata? È il momento di togliergli il potere di decidere per te.', lead:'Quanto spazio occupa il dolore nella tua giornata? È il momento di togliergli il potere di decidere per te.', body:["Convivere con l'endometriosi, l'adenomiosi o il dolore pelvico cronico significa spesso affrontare una sfida quotidiana che logora il corpo e le energie. Queste condizioni creano una rete di tensioni muscolari e infiammatorie che coinvolge l'intero sistema pelvico, alimentando un dolore che sembra non dare mai tregua."], symptoms:["Dolore profondo e persistente, anche al di fuori del ciclo mestruale.","Tensione costante al basso ventre che si irradia verso la schiena (zona lombare) o l'interno coscia.","Fitte improvvise o senso di “morsa” pelvica scatenate da sforzi, stress o movimenti bruschi.","Dolore o fastidio durante la defecazione o la minzione.","Difficoltà a rilassare l'addome, che appare spesso gonfio","Sensazione di affaticamento pelvico dopo una giornata in piedi o dopo l'attività fisica"], help:"La riabilitazione del pavimento pelvico è uno strumento prezioso: lavorando per sciogliere i blocchi muscolari e rieducare la percezione del dolore, possiamo ridurre drasticamente l'impatto che questi disturbi hanno sulla tua quotidianità."}
 ];
 
 const faqs = [
@@ -892,13 +962,12 @@ const faqs = [
   { q:'Ho già fatto fisioterapia, è diverso?', a:'La riabilitazione ostetrica del pavimento pelvico è una specializzazione specifica, diversa dalla fisioterapia generalista. Come ostetrica specializzata, ho una formazione mirata sulla salute femminile in tutte le sue fasi, che integra la dimensione fisica con quella ormonale, emotiva e ostetrica.' }
 ];
 
+/* ─── REVIEWS DATA (DiceBear avatars) ──────────────────── */
 const reviews = [
-  { author:'Martina R.', initials:'MR', time:'ieri', text:'Buongiorno Angela! Oggi primo giorno di ciclo e non ho accusato dolori ne i giorni prima ne adesso!! Non succedeva da anni!! Grazie 🥰' },
-  { author:'Valentina C.', initials:'VC', time:'2 giorni fa', text:'Ho iniziato il percorso post-partum dopo il secondo figlio. Angela ha saputo accompagnarmi con dolcezza e competenza. Mi ha insegnato a conoscere il mio corpo in un modo che non avevo mai sperimentato prima ❤️' },
-  { author:'Sara T.', initials:'ST', time:'la settimana scorsa', text:'Lottavo con la dismenorrea da quando ero adolescente. Dopo il trattamento con Angela i dolori mestruali sono diventati gestibili. Finalmente non devo più saltare il lavoro per colpa del ciclo! Grazie 🌸' },
-  { author:'Giulia M.', initials:'GM', time:'10 giorni fa', text:'Un ambiente accogliente e professionale. Angela è una specialista preparatissima ma soprattutto un essere umano straordinario. Mi ha fatto sentire a mio agio fin dal primo momento ✨' },
-  { author:'Laura B.', initials:'LB', time:'2 settimane fa', text:'Avevo dolore nei rapporti da anni. Angela ha capito subito la mia situazione e ha costruito un percorso su misura. Oggi la mia vita è completamente cambiata. Grazie per aver creduto in me 💕' },
-  { author:'Patrizia N.', initials:'PN', time:'un mese fa', text:'A 56 anni pensavo che i problemi legati alla menopausa fossero inevitabili. Angela mi ha dimostrato il contrario. Ho ripreso una qualità della vita che non avevo da anni. Professionista eccezionale 🌿' }
+  { seed: 'martina-pelvica', bg: 'ffd5dc', topic: 'mestruazioni dolorose', text: 'Buongiorno Angela! Oggi primo giorno di ciclo e non ho accusato dolori ne i giorni prima ne adesso!! Non succedeva da anni!! Grazie ☺️' },
+  { seed: 'valentina-postparto', bg: 'b6e3f4', topic: 'riabilitazione post-partum', text: 'Buongiorno Angela, mi è venuto il ciclo: ZERO DOLORI!🥳 Non mi sono neanche accorta che mi stesse per arrivare🥹' },
+  { seed: 'sara-dismenorrea', bg: 'ffdfbf', topic: 'dismenorrea cronica', text: 'Ciao Angela❤️ davvero grazie di cuore, non finirò mai di ringraziarti🥹❤️ mi ha fatto benissimo venire da te perché non mi sono sentita sbagliata ma compresa e aiutata.. Grazie davvero❤️'},
+  { seed: 'giulia-valutazione',  bg: 'c0aede', topic: 'prima valutazione pelvica', text: "Ti volevo ringraziare, perché finalmente ho potuto avere un rapporto senza provare dolori e senza avere bruciori nei giorni sucessivi. FInalmente anch'io vedo la possibilità di avere dei rapporti senza aver la paura di stare male poi, e per questo ti ringrazio. ❤️"}
 ];
 
 /* ─── RENDER ─────────────────────────────────────────── */
@@ -929,19 +998,26 @@ function renderFAQ() {
 function renderReviews() {
   const grid = document.getElementById('reviewsGrid');
   if (!grid) return;
-  grid.innerHTML = reviews.map(r => `
-    <div class="wa-card">
-      <div class="wa-header">
-        <div class="wa-avatar">${r.initials}</div>
-        <span class="wa-name">${r.author}</span>
-        <span class="wa-time">${r.time}</span>
-      </div>
-      <div class="wa-bubble">${r.text}
-        <div class="wa-tick">✓✓</div>
-      </div>
-      <div class="wa-note">Messaggio WhatsApp ricevuto</div>
-    </div>
-  `).join('');
+  const waIcon = `<svg viewBox="0 0 24 24" width="11" height="11" fill="#25D366"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.83 14.07c-.25.7-1.45 1.36-2 1.45-.5.08-1.13.11-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.93-4.36-.14-.19-1.17-1.56-1.17-2.98 0-1.42.74-2.11 1-2.4.26-.29.57-.36.76-.36h.55c.18 0 .41-.01.6.46.24.59.81 2.01.88 2.16.07.15.12.32.02.52-.09.2-.16.32-.31.5-.15.18-.32.4-.45.54-.15.16-.3.33-.13.62.17.29.77 1.27 1.66 2.06 1.14 1.02 2.1 1.34 2.4 1.49.3.15.48.13.65-.05.18-.18.74-.86.94-1.16.2-.3.41-.25.68-.15.27.1 1.71.81 2 .96.29.15.49.22.56.34.08.13.08.74-.17 1.44z"/></svg>`;
+  grid.innerHTML = reviews.map(r => {
+    const seed = Math.random().toString(36).slice(2);
+    const url = `https://api.dicebear.com/10.x/avataaars/svg?facialHairVariant=&clothesGraphicVariant=bat,bear,deer,diamond,hola,pizza,skull,skullOutline&mouthVariant=default,eating,smile,tongue,twinkle&topVariant=bigHair,bob,bun,curly,curvy,dreads,frida,fro,froBand,hijab,longButNotTooLong,miaWallace,shaggy,shaggyMullet,shavedSides,straight01,straight02,straightAndStrand,winterHat02,winterHat1&eyebrowsVariant=angry,angryNatural,default,defaultNatural,flatNatural,frownNatural,raisedExcited,raisedExcitedNatural,sadConcerned,sadConcernedNatural,upDown,upDownNatural&seed=${seed}`;
+    return `
+      <div class="wa-card">
+        <div class="wa-header">
+          <div class="wa-avatar">
+            <img src="${url}" alt="avatar" loading="lazy">
+          </div>
+          <div class="wa-meta">
+            <span class="wa-topic">${r.topic}</span>
+            <span class="wa-via">${waIcon} via WhatsApp</span>
+          </div>
+        </div>
+        <div class="wa-bubble">${r.text}
+          <div class="wa-tick">✓✓</div>
+        </div>
+      </div>`;
+  }).join('');
 }
 
 function toggleFAQ(i) {
@@ -992,17 +1068,9 @@ function showServiceDetail(serviceId, fromPage) {
     <h3>Sintomi più frequenti</h3>
     <ul class="symptom-list">${s.symptoms.map(sym => `<li>${sym}</li>`).join('')}</ul>
     <h3>Come posso aiutarti</h3>
-    <p>Attraverso una valutazione personalizzata costruiremo insieme il percorso più adatto alla tua situazione. Ogni trattamento è specifico, rispettoso e basato sulle più recenti evidenze scientifiche.</p>
+    <p>${s.help}</p>
   `;
   showPage('service-detail');
-}
-
-function submitForm(e) {
-  e.preventDefault();
-  const btn = e.target.querySelector('.btn-submit');
-  btn.textContent = 'Messaggio inviato ✓';
-  btn.style.background = 'var(--sage)';
-  setTimeout(() => { btn.textContent = 'Richiedi la chiamata gratuita →'; btn.style.background = ''; }, 3000);
 }
 
 window.addEventListener('scroll', () => {
