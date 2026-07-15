@@ -17,6 +17,9 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://dottssamarietti.com/amo.jpeg">
+<link rel="icon" type="image/jpeg" href="amo.jpeg">
+<link rel="apple-touch-icon" href="amo.jpeg">
+<link rel="shortcut icon" type="image/jpeg" href="amo.jpeg">
 <style>
   @font-face {
     font-family: 'Cormorant Garamond';
@@ -104,7 +107,6 @@
     font-size: 1.35rem; font-weight: 400;
     color: var(--warm-dark); letter-spacing: 0.02em;
     cursor: pointer; text-decoration: none;
-    display: flex; align-items: center;
   }
   .nav-logo span { color: var(--rose); }
 
@@ -681,9 +683,7 @@
 
 <!-- NAV -->
 <nav id="mainNav">
-  <a class="nav-logo" onclick="showPage('home')" href="#">
-    <img src="amo.jpeg" alt="Angela Marietti Ostetrica" style="height: 40px; width: auto; display: block;">
-  </a>
+  <a class="nav-logo" onclick="showPage('home')" href="#">Angela <span>Marietti</span></a>
   <button class="hamburger" id="hamburger" aria-label="Menu" onclick="toggleMenu()">
     <span></span><span></span><span></span>
   </button>
